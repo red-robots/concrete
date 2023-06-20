@@ -1,4 +1,3 @@
-=======
 # BUCHANAN CONCRETE
 WordPress Theme
 
