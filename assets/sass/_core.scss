@@ -104,4 +104,18 @@ h1,h2,h3,h4,h5,h6 {
     display: inline-block;
     float: left;
   }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  ul.menu > li > a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    color: $primary;
+    font-size: 1.1em;
+    line-height: 1.2;
+  }
 }
