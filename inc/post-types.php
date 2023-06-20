@@ -7,6 +7,9 @@
 
 add_action('init', 'js_custom_init', 1);
 function js_custom_init() {
+    
+    //'supports'  => array('title','editor','thumbnail')
+
     $post_types = array(
         array(
           'post_type' => 'projects',
@@ -14,7 +17,7 @@ function js_custom_init() {
           'plural'    => 'Projects',
           'single'    => 'Project',
           'menu_icon' => 'dashicons-portfolio',
-          'supports'  => array('title','editor','thumbnail')
+          'supports'  => array('title','editor')
         )
     );
     
