@@ -1,7 +1,7 @@
 =======
-# CHARTER PROPERTIES INC.
+# BUCHANAN CONCRETE
 WordPress Theme
 
-* Developer: Lisa DeBona
-* Date Created: 02.07.2023
+* Developer: Lisa D.
+* Date Created: 06.20.2023
 * Date Modified: 
