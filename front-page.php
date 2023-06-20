@@ -3,6 +3,9 @@ get_header();
 ?>
 
 <style>
+  body.home {
+    background: #11233d;
+  }
   h1 {
     text-align: center;
     font-family: "Wix Madefor Text",sans-serif;
@@ -11,6 +14,7 @@ get_header();
     text-transform: uppercase;
     letter-spacing: 0.01em;
     margin: 15% 0 0;
+    color: #FFF;
   }
 </style>
 <div id="primary" class="homepage-content">
