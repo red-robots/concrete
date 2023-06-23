@@ -1,28 +1,12 @@
 <?php
 get_header(); 
 ?>
-
-<style>
-  body.home {
-    background: #11233d;
-  }
-  h1 {
-    text-align: center;
-    font-family: "Wix Madefor Text",sans-serif;
-    font-size: 5rem;
-    line-height: 1.1;
-    text-transform: uppercase;
-    letter-spacing: 0.01em;
-    margin: 15% 0 0;
-    color: #FFF;
-  }
-</style>
 <div id="primary" class="homepage-content">
   <main id="main" class="site-main wrapper" role="main">
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-      <h1 class="page-title">This page is under construction</h1>
+     <h1 style="display:none;"><?php the_title(); ?></h1>
 
     <?php endwhile; ?>
 

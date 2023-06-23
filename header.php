@@ -45,9 +45,11 @@ var params={};location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){
           <h1 class="site-logo desktop"><a hef="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
         <?php } ?>
 
-        <nav id="site-navigation" class="main-navigation" role="navigation">
+        <nav id="site-navigation" class="main-navigation animated fadeInDown" role="navigation">
           <span id="closeMenu" class="menu-toggle"><span class="bar"></span></span>
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu','link_before'=>'<span>','link_after'=>'</span>','container_class'=>'menu-wrapper') ); ?>
+          <?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu','link_before'=>'<span>','link_after'=>'</span>','container_class'=>'menu-wrapper') ); 
+          wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu','container_class'=>'menu-wrapper') );
+          ?>
         </nav><!-- #site-navigation -->
 
         <span id="menu-toggle" class="menu-toggle"><span class="sr">Menu</span><span class="bar"></span></span>
@@ -55,6 +57,6 @@ var params={};location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){
 		</div>
 	</header>
 
-	<?php //get_template_part('parts/hero'); ?>
+	<?php get_template_part('parts/hero'); ?>
 
 	<div id="content" class="site-content">

@@ -37,6 +37,9 @@ body {
     padding-top: 100px;
   }
 }
+a,input,button,textarea {
+  transition: all ease .3s;
+}
 h1,h2,h3,h4,h5,h6 {
   font-family: $font_primary;
   color: #000;
@@ -71,7 +74,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .wrapper {
-  max-width: $wrapper;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   padding-left: 15px;
@@ -83,16 +86,37 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-header {
-  background: #f1f1f1;
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: 125px;
+  .wrapper {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
   .head-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
   }
+}
+
+.site-logo {
+  display: none;
 }
 
 .main-navigation {
   text-align: right;
+
   ul {
     display: inline-block;
     margin: 0 0;
@@ -105,17 +129,56 @@ h1,h2,h3,h4,h5,h6 {
     float: left;
   }
 
+  li.menu-logo {
+    visibility: hidden;
+  }
+
   a {
     display: inline-block;
     text-decoration: none;
   }
-
+  ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  ul.menu > li {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
   ul.menu > li > a {
     margin: 0 5px;
     padding: 5px 10px;
     display: inline-block;
     color: $primary;
-    font-size: 1.1em;
+    font-size: 20px;
+    font-weight: bold;
     line-height: 1.2;
+    text-transform: uppercase;
+  }
+  ul.menu > li:hover > a {
+    color: $secondary;
+  }
+}
+
+.hero {
+  height: 100vh;
+  padding-top: 125px;
+  div.image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+body.logged-in.admin-bar {
+  .site-header {
+    top: 32px;
   }
 }
