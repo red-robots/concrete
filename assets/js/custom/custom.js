@@ -39,31 +39,31 @@ jQuery(document).ready(function ($) {
     responsiveClass:true,
     responsive:{
         0:{
-            items:1,
-            nav:true
+          items:1,
+          nav:true
         },
         600:{
-            items:2,
-            nav:false
+          items:1,
+          nav:false,
         },
         800:{
-            items:3,
-            nav:false
-        },
-        1100:{
-            items:4,
-            nav:true,
-            loop:false
+          items:3,
+          nav:false,
         },
         1300:{
-            items:5,
-            nav:true,
-            loop:false
+          items:4,
+          nav:true,
+          loop:false
+        },
+        1400:{
+          items:5,
+          nav:true,
+          loop:false
         }
     }
   });
 
-  
+
   owl.on("dragged.owl.carousel", function (event) {
     var direction = event.relatedTarget['_drag']['direction'];
     if(direction=='left') {

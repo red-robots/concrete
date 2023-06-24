@@ -1377,7 +1377,23 @@ h1,h2,h3,h4,h5,h6{font-family:"Calibri",sans-serif;color:#000;letter-spacing:.03
 .carousel-wrapper .customControl.control-previous{background-image:url("images/Left-Arrow.png");left:-70px}
 .carousel-wrapper .customControl.control-next{background-image:url("images/Right-Arrow.png");right:-70px}
 body.logged-in.admin-bar .site-header{top:32px}
-@media(print),(prefers-reduced-motion:reduce){.animated{-webkit-animation-duration:1ms !important;animation-duration:1ms !important;-webkit-transition-duration:1ms !important;transition-duration:1ms !important;-webkit-animation-iteration-count:1 !important;animation-iteration-count:1 !important}
+@media screen and (max-width:1399px){.carousel-wrapper .owl-item{max-width:240px;padding-left:50px}
+.carousel-wrapper .owl-item:after{left:11px}
+.carousel-wrapper .customControl.control-previous{left:-75px}
+.carousel-wrapper .customControl.control-next{right:-75px}
+.carousel-wrapper .carousel-inner{max-width:950px}
+}@media screen and (max-width:800px){.carousel-wrapper .carousel-inner{max-width:620px}
+.carousel-wrapper .owl-item{padding-left:30px}
+.carousel-wrapper .owl-item:after{left:-7px}
+.carousel-wrapper .customControl.control-previous{left:-60px}
+.carousel-wrapper .customControl.control-next{right:-60px}
+}@media screen and (max-width:600px){.carousel-wrapper .carousel-inner{max-width:100%}
+.carousel-wrapper .owl-carousel{left:0}
+.carousel-wrapper .owl-item{max-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:0}
+.carousel-wrapper .owl-item:after{display:none}
+.carousel-wrapper .customControl.control-previous{left:0}
+.carousel-wrapper .customControl.control-next{right:0}
+}@media(print),(prefers-reduced-motion:reduce){.animated{-webkit-animation-duration:1ms !important;animation-duration:1ms !important;-webkit-transition-duration:1ms !important;transition-duration:1ms !important;-webkit-animation-iteration-count:1 !important;animation-iteration-count:1 !important}
 }@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}
 100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}

@@ -43,19 +43,19 @@ jQuery(document).ready(function ($) {
         nav: true
       },
       600: {
-        items: 2,
+        items: 1,
         nav: false
       },
       800: {
         items: 3,
         nav: false
       },
-      1100: {
+      1300: {
         items: 4,
         nav: true,
         loop: false
       },
-      1300: {
+      1400: {
         items: 5,
         nav: true,
         loop: false
