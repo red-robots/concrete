@@ -13,7 +13,7 @@
         if($img) { ?>
         <figure class="thumbnail" data-pid="<?php echo $c->ID ?>" data-title="<?php echo $c->post_title ?>">
           <div class="frame"></div>
-          <div class="img" style="background-image:url('<?php echo $img['url'] ?>')"></div>
+          <div class="img" style="background-image:url('<?php echo $img['sizes']['medium'] ?>')"></div>
         </figure>
         <?php } ?>
       <?php } ?>
