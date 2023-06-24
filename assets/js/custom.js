@@ -31,4 +31,70 @@ jQuery(document).ready(function ($) {
     .replace(/^-+/, '') // Trim - from start of text
     .replace(/-+$/, ''); // Trim - from end of text
   }
+
+  var owl = $('#carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      600: {
+        items: 2,
+        nav: false
+      },
+      800: {
+        items: 3,
+        nav: false
+      },
+      1100: {
+        items: 4,
+        nav: true,
+        loop: false
+      },
+      1300: {
+        items: 5,
+        nav: true,
+        loop: false
+      }
+    }
+  });
+  owl.on("dragged.owl.carousel", function (event) {
+    var direction = event.relatedTarget['_drag']['direction'];
+
+    if (direction == 'left') {
+      LoadMoreProjects();
+    }
+  });
+  $(document).on('click', '.carousel-wrapper .customControl', function (e) {
+    e.preventDefault();
+    var action = $(this).attr('data-action');
+
+    if (action == "next") {
+      $('#carousel .owl-next').trigger('click');
+      LoadMoreProjects();
+    } else {
+      $('#carousel .owl-prev').trigger('click');
+    }
+  });
+
+  function LoadMoreProjects() {
+    var carouselDiv = $('#carouselData');
+    var baseUrl = carouselDiv.attr('data-baseUrl');
+    var page = carouselDiv.attr('data-page');
+    var next = parseInt(page) + 1;
+    var loadURL = baseUrl + '?spg=' + next;
+    carouselDiv.attr('data-page', next);
+    $('.hiddenData').load(loadURL + " .hiddenData", function () {
+      if ($('.hiddenData .hiddenData .thumbnail').length > 0) {
+        var items = [];
+        $('.hiddenData .hiddenData .thumbnail').each(function (e) {
+          $('#carousel').owlCarousel('add', this.outerHTML).owlCarousel('update');
+        });
+      }
+    });
+  }
 });

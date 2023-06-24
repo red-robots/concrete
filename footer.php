@@ -1,4 +1,7 @@
 	</div><!-- #content -->
+
+  <?php get_template_part('parts/carousel');  ?>
+  
 	<?php  
 	$footer_logo = get_field("footer_logo","option");
   $footer_widget = get_field("footer_widget","option");
