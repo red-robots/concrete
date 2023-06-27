@@ -60,6 +60,9 @@ jQuery(document).ready(function ($) {
         nav: true,
         loop: false
       }
+    },
+    onChanged: function onChanged() {// var countItems = $('#carousel div.frame').length;
+      // console.log( countItems );
     }
   });
   owl.on("dragged.owl.carousel", function (event) {
@@ -88,13 +91,36 @@ jQuery(document).ready(function ($) {
     var next = parseInt(page) + 1;
     var loadURL = baseUrl + '?spg=' + next;
     carouselDiv.attr('data-page', next);
-    $('.hiddenData').load(loadURL + " .hiddenData", function () {
-      if ($('.hiddenData .hiddenData .thumbnail').length > 0) {
-        var items = [];
-        $('.hiddenData .hiddenData .thumbnail').each(function (e) {
+    $('.hiddenDataContainer').load(loadURL + " .hiddenData", function () {
+      if ($('.hiddenDataContainer .thumbnail').length) {
+        $('.hiddenDataContainer .thumbnail').each(function (e) {
           $('#carousel').owlCarousel('add', this.outerHTML).owlCarousel('update');
         });
-      }
+      } // if( $('.hiddenData .hiddenData .thumbnail').length > 0 ) {
+      //   var items = [];
+      //   $('.hiddenData .hiddenData .thumbnail').each(function(e){
+      //     $('#carousel').owlCarousel('add', this.outerHTML).owlCarousel('update');
+      //   });
+      // }
+
     });
+  } // adjustContentHeight();
+  // $(window).on('resize orientationchange', function(){
+  //   adjustContentHeight();
+  // });
+
+
+  function adjustContentHeight() {
+    if ($('body.subpage #primary.generic-layout').length) {
+      var titleHeight = $('.titlediv').height();
+      var carouselHeight = $('#carouselData').outerHeight();
+      var extra = titleHeight + carouselHeight;
+      var mainHeight = $('#main').height();
+      var minusHeight = carouselHeight + titleHeight; //var contentHeight = (mainHeight - extra) + 40;
+
+      var contentHeight = mainHeight - minusHeight; //$('body.subpage #primary.generic-layout #main').css('height', contentHeight+'px');
+
+      $('.contentDiv').css('height', contentHeight + 'px');
+    }
   }
 });

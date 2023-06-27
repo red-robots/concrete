@@ -15,19 +15,14 @@ get_header(); ?>
 
 <div id="primary" class="content-area-full generic-layout">
 	<main id="main" class="site-main" role="main">
-
-    
     <?php while ( have_posts() ) : the_post(); ?>
-
-    <div class="wrapper">  
-      <h1 class="page-title"><span><?php the_title(); ?></span></h1>
-      <div class="entry-content">
-        <?php the_content(); ?>
+      <div class="titlediv">
+        <div class="wrapper"><h1 class="page-title"><?php the_title(); ?></h1></div>
       </div>
-    </div>
-
+      <div class="entry-content contentDiv">
+        <div class="wrapper"><?php the_content(); ?></div>
+      </div>
     <?php endwhile; ?>
-
 	</main><!-- #main -->
 </div><!-- #primary -->
 

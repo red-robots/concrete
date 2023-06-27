@@ -18,11 +18,52 @@
         <?php } ?>
       <?php } ?>
 
+      <?php  
+      $args = array(
+        'posts_per_page'=> 5,
+        'post_type'     => 'projects',
+        'post_status'   => 'publish',
+        'paged'         => $paged
+      );
+
+      if($firstBatch) {
+        $args['post__not_in'] = $firstBatch;
+      }
+
+      $projects = new WP_Query($args);
+      if ( $projects->have_posts() ) { ?>
+        <?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
+          <?php if( $img = get_field('main_photo') ) { ?>
+          <figure class="thumbnail" data-pid="<?php the_ID(); ?>" data-title="<?php echo get_the_title(); ?>">
+            <div class="frame"></div>
+            <div class="img" style="background-image:url('<?php echo $img['sizes']['medium'] ?>')"></div>
+          </figure>
+          <?php } ?>
+        <?php endwhile; wp_reset_postdata(); ?>
+      <?php } ?>
+
     </div>
 
     <a href="javascript:void(0)" data-action="previous" class="customControl control-previous"><span class="sr">Previous</span></a>
     <a href="javascript:void(0)" data-action="next" class="customControl control-next"><span class="sr">Next</span></a>
   </div>
+  
+  <div class="hiddenDataContainer" style="display:none"></div>
+  <div class="hiddenData" style="display:none">
+    <?php 
+      $projects = new WP_Query($args);
+      if ( $projects->have_posts() ) { ?>
+        <?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
+          <?php if( $img = get_field('main_photo') ) { ?>
+          <figure class="thumbnail" data-pid="<?php the_ID(); ?>" data-title="<?php echo get_the_title(); ?>">
+            <div class="frame"></div>
+            <div class="img" style="background-image:url('<?php echo $img['url'] ?>')"></div>
+          </figure>
+          <?php } ?>
+        <?php endwhile; wp_reset_postdata(); ?>
+    <?php } ?>
+  </div>
+
 </div>
 
 <?php } ?>
