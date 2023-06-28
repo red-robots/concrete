@@ -1389,6 +1389,36 @@ body.subpage #content .entry-content .wrapper{padding-top:30px;padding-bottom:30
 body.subpage .carousel-wrapper:before{content:"";background-color:#0f213c;background-image:url("images/BlueGridBg.png");background-size:100%;background-position:bottom center;background-repeat:no-repeat;position:absolute;left:0;bottom:0;width:100%;height:100%}
 body.subpage .carousel-wrapper:after{content:"";background-size:100%;background-position:bottom center;background-repeat:no-repeat;background-color:rgba(0,0,0,.65);position:absolute;left:0;bottom:0;width:100%;height:100%}
 body.subpage .carousel-wrapper .carousel-inner{z-index:10}
+body.subpage.page-template-page-projects #content #primary{overflow:visible}
+body.subpage.page-template-page-projects #content #main{background-color:transparent}
+body.subpage.page-template-page-projects #content a.featImage{display:block;width:100%;text-decoration:none}
+body.subpage.page-template-page-projects #content .titlediv{background-image:none;background-color:rgba(0,0,0,.25);border-bottom:5px solid #0f213c}
+body.subpage.page-template-page-projects #content .entry-content,body.subpage.page-template-page-projects #content .wrapper{height:auto}
+body.subpage.page-template-page-projects #content .wrapper{padding-top:0;padding-bottom:0}
+body.subpage.page-template-page-projects #content .entry-content{text-align:center;font-size:1.8em;font-weight:bold;text-transform:uppercase}
+body.subpage.page-template-page-projects #content .entry-content h4{color:#fff;font-size:1.25em;font-weight:bold;letter-spacing:.03em;text-transform:uppercase;margin:20px 0 0;-webkit-text-stroke-width:1px;-webkit-text-stroke-color:#000}
+body.subpage.page-template-page-projects .carousel-wrapper{overflow:hidden;background:transparent}
+body.subpage.page-template-page-projects .carousel-wrapper:before{display:none}
+body.subpage.page-template-page-projects .carousel-wrapper:after{background:rgba(0,0,0,.5);bottom:-1px}
+body.subpage.page-template-page-projects .categories{margin-top:50px}
+body.subpage.page-template-page-projects .categories .flexwrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+body.subpage.page-template-page-projects .categories .term{width:33.333%;padding:20px}
+body.subpage.page-template-page-projects .categories .term .title{overflow:hidden}
+body.subpage.page-template-page-projects .categories .term .button{text-align:center;padding:8px;position:relative}
+body.subpage.page-template-page-projects .categories .term .button:before{content:"";width:102%;height:8px;position:absolute;top:0;left:-3px;border-top:8px solid rgba(118,118,118,.65);border-left:12px solid transparent;border-right:12px solid transparent;z-index:5}
+body.subpage.page-template-page-projects .categories .term .button:after{content:"";width:102%;height:8px;position:absolute;bottom:0;left:-3px;border-bottom:8px solid rgba(0,0,0,.85);border-left:12px solid transparent;border-right:12px solid transparent}
+body.subpage.page-template-page-projects .categories .term .button a{display:block;text-decoration:none;color:#fff;text-transform:uppercase;font-size:16px;line-height:1.2;letter-spacing:.05em;background:rgba(0,0,0,.75);padding:6px 15px;position:relative}
+body.subpage.page-template-page-projects .categories .term .button a:before{content:"";width:10px;height:150%;position:absolute;top:-4px;left:-10px;background:rgba(63,63,63,.85);-webkit-transform:skewY(35deg);transform:skewY(35deg)}
+body.subpage.page-template-page-projects .categories .term .button a:after{content:"";width:10px;height:150%;position:absolute;top:-4px;right:-10px;background:rgba(63,63,63,.88);-webkit-transform:skewY(-35deg);transform:skewY(-35deg)}
+body.subpage.page-template-page-projects .categories .term figure{margin:0;position:relative;width:100%;background-size:cover;background-position:center;background-repeat:no-repeat;overflow:hidden}
+body.subpage.page-template-page-projects .categories .term figure.noImage{background-color:#0f213c}
+body.subpage.page-template-page-projects .categories .term figure img{width:100%;height:auto;float:left}
+body.subpage.page-template-page-projects .categories .term figure .b1{display:block;width:100%;height:100%;position:absolute;top:0;left:0;z-index:5}
+body.subpage.page-template-page-projects .categories .term figure .b1:before{content:"";width:102%;height:8px;position:absolute;top:0;left:-3px;border-top:8px solid rgba(210,210,210,.65);border-left:12px solid transparent;border-right:12px solid transparent;z-index:5}
+body.subpage.page-template-page-projects .categories .term figure .b1:after{content:"";width:102%;height:8px;position:absolute;bottom:0;left:-3px;border-bottom:8px solid rgba(31,31,31,.95);border-left:12px solid transparent;border-right:12px solid transparent}
+body.subpage.page-template-page-projects .categories .term figure .b2{display:block;width:100%;height:100%;position:absolute;top:0;left:0;z-index:2}
+body.subpage.page-template-page-projects .categories .term figure .b2:before{content:"";width:10px;height:150%;position:absolute;top:3px;left:0;background:rgba(63,63,63,.85);-webkit-transform:skewY(35deg);transform:skewY(35deg)}
+body.subpage.page-template-page-projects .categories .term figure .b2:after{content:"";width:10px;height:150%;position:absolute;top:3px;right:0;-webkit-filter:sepia(1);filter:sepia(1);background:rgba(27,27,27,.88);-webkit-transform:skewY(-35deg);transform:skewY(-35deg)}
 body.logged-in.admin-bar .site-header{top:32px}
 @media screen and (max-width:1399px){.carousel-wrapper .owl-item{max-width:240px;padding-left:50px}
 .carousel-wrapper .owl-item:after{left:11px}
