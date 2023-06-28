@@ -1389,6 +1389,7 @@ body.subpage #content .entry-content .wrapper{padding-top:30px;padding-bottom:30
 body.subpage .carousel-wrapper:before{content:"";background-color:#0f213c;background-image:url("images/BlueGridBg.png");background-size:100%;background-position:bottom center;background-repeat:no-repeat;position:absolute;left:0;bottom:0;width:100%;height:100%}
 body.subpage .carousel-wrapper:after{content:"";background-size:100%;background-position:bottom center;background-repeat:no-repeat;background-color:rgba(0,0,0,.65);position:absolute;left:0;bottom:0;width:100%;height:100%}
 body.subpage .carousel-wrapper .carousel-inner{z-index:10}
+body.subpage.page-template-page-projects{overflow:auto}
 body.subpage.page-template-page-projects #content #primary{overflow:visible}
 body.subpage.page-template-page-projects #content #main{background-color:transparent}
 body.subpage.page-template-page-projects #content a.featImage{display:block;width:100%;text-decoration:none}

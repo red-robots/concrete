@@ -475,6 +475,7 @@ body.subpage {
   
 
   &.page-template-page-projects {
+    overflow: auto;
     #content {
       #primary {
         overflow: visible;
