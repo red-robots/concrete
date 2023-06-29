@@ -1377,15 +1377,17 @@ h1,h2,h3,h4,h5,h6{font-family:"Calibri",sans-serif;color:#000;letter-spacing:.03
 .carousel-wrapper .customControl{cursor:pointer;width:86px;height:93px;position:absolute;top:50%;z-index:50;-webkit-transform:translateY(-50%);transform:translateY(-50%);background-size:contain;background-position:center;background-repeat:no-repeat}
 .carousel-wrapper .customControl.control-previous{background-image:url("images/Left-Arrow.png");left:-70px}
 .carousel-wrapper .customControl.control-next{background-image:url("images/Right-Arrow.png");right:-70px}
-body.subpage{overflow:hidden;background-color:#0f213c;background-image:url("images/BlueGridBg.png");background-size:cover;background-position:top center;background-repeat:no-repeat}
+body.subpage{background-color:#0f213c;background-image:url("images/BlueGridBg.png");background-size:cover;background-position:top center;background-repeat:no-repeat;background-attachment:fixed}
 body.subpage #content{max-width:100%;width:100%;margin:0 auto;padding-top:125px;overflow:hidden}
 body.subpage #content .wrapper{max-width:1100px;width:100%;margin:0 auto}
 body.subpage #content #primary{overflow:hidden}
-body.subpage #content #main{overflow:auto;height:100%;color:#fff;padding-top:0;padding-bottom:0;background:#0f213c}
+body.subpage #content #main{overflow:auto;height:100%;color:#fff;padding-top:0;padding-bottom:50px;background:#0f213c}
+body.subpage #content .generic-layout #main{padding-bottom:0}
 body.subpage #content .titlediv{text-align:center;width:100%;position:relative;left:0;top:0;background-image:url("images/BlueGridBg.png");background-size:cover;background-position:0 -21px;background-repeat:no-repeat}
 body.subpage #content .titlediv h1{font-size:2.5em;font-weight:600;line-height:1.2;letter-spacing:.2em;color:#fff;padding:15px 0;margin:0;text-transform:uppercase}
-body.subpage #content .entry-content{font-size:1.3em;line-height:1.3;position:relative;overflow:hidden;height:100vh}
-body.subpage #content .entry-content .wrapper{padding-top:30px;padding-bottom:30px;overflow:auto;height:50vh}
+body.subpage #content .entry-content{font-size:1.3em;line-height:1.3;position:relative;overflow:hidden}
+body.subpage #content .entry-content .wrapper{padding-top:30px;padding-bottom:30px}
+body.subpage .carousel-wrapper{position:relative}
 body.subpage .carousel-wrapper:before{content:"";background-color:#0f213c;background-image:url("images/BlueGridBg.png");background-size:100%;background-position:bottom center;background-repeat:no-repeat;position:absolute;left:0;bottom:0;width:100%;height:100%}
 body.subpage .carousel-wrapper:after{content:"";background-size:100%;background-position:bottom center;background-repeat:no-repeat;background-color:rgba(0,0,0,.65);position:absolute;left:0;bottom:0;width:100%;height:100%}
 body.subpage .carousel-wrapper .carousel-inner{z-index:10}
@@ -1408,10 +1410,14 @@ body.subpage.page-template-page-projects .categories .term .title{overflow:hidde
 body.subpage.page-template-page-projects .categories .term .button{text-align:center;padding:8px;position:relative}
 body.subpage.page-template-page-projects .categories .term .button:before{content:"";width:102%;height:8px;position:absolute;top:0;left:-3px;border-top:8px solid rgba(118,118,118,.65);border-left:12px solid transparent;border-right:12px solid transparent;z-index:5}
 body.subpage.page-template-page-projects .categories .term .button:after{content:"";width:102%;height:8px;position:absolute;bottom:0;left:-3px;border-bottom:8px solid rgba(0,0,0,.85);border-left:12px solid transparent;border-right:12px solid transparent}
-body.subpage.page-template-page-projects .categories .term .button a{display:block;text-decoration:none;color:#fff;text-transform:uppercase;font-size:16px;line-height:1.2;letter-spacing:.05em;background:rgba(0,0,0,.75);padding:6px 15px;position:relative}
+body.subpage.page-template-page-projects .categories .term .button a{display:block;text-decoration:none;color:#fff;text-transform:uppercase;font-size:16px;line-height:1.2;letter-spacing:.05em;background:rgba(0,0,0,.75);position:relative;text-align:center;cursor:pointer}
 body.subpage.page-template-page-projects .categories .term .button a:before{content:"";width:10px;height:150%;position:absolute;top:-4px;left:-10px;background:rgba(63,63,63,.85);-webkit-transform:skewY(35deg);transform:skewY(35deg)}
 body.subpage.page-template-page-projects .categories .term .button a:after{content:"";width:10px;height:150%;position:absolute;top:-4px;right:-10px;background:rgba(63,63,63,.88);-webkit-transform:skewY(-35deg);transform:skewY(-35deg)}
+body.subpage.page-template-page-projects .categories .term .button a span{display:block;padding:6px 15px;overflow:hidden;-webkit-transition:all ease 1s;transition:all ease 1s;cursor:pointer}
+body.subpage.page-template-page-projects .categories .term .button a span:before{content:"";display:block;width:20%;height:100%;position:absolute;top:0;left:-20%;opacity:0;background:rgba(255,255,255,.35);-webkit-transition:all ease 1s;transition:all ease 1s;-webkit-transform:skew(-45deg);transform:skew(-45deg)}
+body.subpage.page-template-page-projects .categories .term .button a:hover span:before{opacity:1;width:50%;left:50vw}
 body.subpage.page-template-page-projects .categories .term figure{margin:0;position:relative;width:100%;background-size:cover;background-position:center;background-repeat:no-repeat;overflow:hidden}
+body.subpage.page-template-page-projects .categories .term figure:before{content:"";display:block;width:calc(100% - 8px);height:calc(100% - 8px);position:absolute;top:8px;left:8px;background:transparent;z-index:2;-webkit-box-shadow:0 0 5px 3px rgba(0,0,0,.3) inset;box-shadow:0 0 5px 3px rgba(0,0,0,.3) inset}
 body.subpage.page-template-page-projects .categories .term figure.noImage{background-color:#0f213c}
 body.subpage.page-template-page-projects .categories .term figure img{width:100%;height:auto;float:left}
 body.subpage.page-template-page-projects .categories .term figure .b1{display:block;width:100%;height:100%;position:absolute;top:0;left:0;z-index:5}
@@ -1420,8 +1426,20 @@ body.subpage.page-template-page-projects .categories .term figure .b1:after{cont
 body.subpage.page-template-page-projects .categories .term figure .b2{display:block;width:100%;height:100%;position:absolute;top:0;left:0;z-index:2}
 body.subpage.page-template-page-projects .categories .term figure .b2:before{content:"";width:10px;height:150%;position:absolute;top:3px;left:0;background:rgba(63,63,63,.85);-webkit-transform:skewY(35deg);transform:skewY(35deg)}
 body.subpage.page-template-page-projects .categories .term figure .b2:after{content:"";width:10px;height:150%;position:absolute;top:3px;right:0;-webkit-filter:sepia(1);filter:sepia(1);background:rgba(27,27,27,.88);-webkit-transform:skewY(-35deg);transform:skewY(-35deg)}
+body.subpage.archive #content #main{background:transparent;padding-top:0;padding-bottom:60px}
+body.subpage.archive .titlediv{border-bottom:5px solid #0f213c}
+.projects-wrapper{padding-top:50px}
+.project-listing{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.project-listing .item-info{width:100%}
+.project-listing .item-info .projectLink{display:block;width:100%;text-decoration:none}
+.project-listing .item-info figure{width:100%;float:left;margin:0;position:relative;border-radius:8px;overflow:hidden}
+.project-listing .item-info div.img{position:absolute;top:50%;left:50%;width:97%;height:97%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.project-listing .item-info div.img span{display:block;width:100%;height:100%;position:absolute;top:0;left:0;background-size:cover;background-position:center;background-repeat:no-repeat;border-radius:5px;-webkit-transition:all ease .5s;transition:all ease .5s}
+.project-listing .item-info img.frame{width:100%;height:auto;float:left;position:relative;z-index:5}
+.project-listing .item-info .projectLink:hover div.img span{-webkit-transform:scale(1.1);transform:scale(1.1)}
 body.logged-in.admin-bar .site-header{top:32px}
-@media screen and (max-width:1399px){.carousel-wrapper .owl-item{max-width:240px;padding-left:50px}
+@media(min-width:960px){.project-listing .item-info{width:25%}
+}@media screen and (max-width:1399px){.carousel-wrapper .owl-item{max-width:240px;padding-left:50px}
 .carousel-wrapper .owl-item:after{left:11px}
 .carousel-wrapper .customControl.control-previous{left:-75px}
 .carousel-wrapper .customControl.control-next{right:-75px}

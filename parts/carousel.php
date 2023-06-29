@@ -1,4 +1,14 @@
-<?php if( $carouselItems = get_field('projects_selection') ) { ?>
+<?php 
+$carouselItems = get_field('projects_selection');
+if( is_archive() ) {
+  $queried_object = get_queried_object(); 
+  $taxonomy = ( isset($queried_object->taxonomy) && $queried_object->taxonomy ) ? $queried_object->taxonomy : '';
+  if($taxonomy=='project-category') {
+    $carouselItems = get_field('projects_selection',18);
+  }
+}
+
+if( $carouselItems ) { ?>
 <?php  
   $firstBatch = array();
   $paged = ( isset($_GET['spg']) && $_GET['spg'] ) ? $_GET['spg'] : 1;

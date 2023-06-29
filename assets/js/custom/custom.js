@@ -67,6 +67,26 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  adjustBottomCarousel();
+  $(window).on('resize orientationchange',function(){
+    adjustBottomCarousel();
+  });
+  
+  /* Adjust Bottom Carousel. If window is higher than content, then make carousel fixed */
+  function adjustBottomCarousel() {
+    if( $('.carousel-wrapper').length ) {
+      var headerHeight = $('.site-header').height();
+      var contentHeight = $('#main').height();
+      var carouselHeight = $('.carousel-wrapper').height();
+      var contentAndCarousel = headerHeight+contentHeight+carouselHeight;
+      if( $(window).height() > contentAndCarousel ) {
+        $('.carousel-wrapper').css('position','fixed');
+      } else {
+        $('.carousel-wrapper').css('position','');
+      }
+    }
+  }
+
 
   owl.on("dragged.owl.carousel", function (event) {
     var direction = event.relatedTarget['_drag']['direction'];

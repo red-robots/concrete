@@ -4,7 +4,7 @@
  */
 get_header(); ?>
 
-<div id="primary" class="content-area-full projects-page">
+<div id="primary" class="content-area-full templated projects-page">
 	<main id="main" class="site-main" role="main">
     <?php while ( have_posts() ) : the_post(); ?>
       <div class="titlediv">
