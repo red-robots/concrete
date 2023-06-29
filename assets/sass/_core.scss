@@ -196,7 +196,7 @@ h1,h2,h3,h4,h5,h6 {
   z-index: 200;
   border-top: 9px solid #151515;
   border-bottom: 22px solid #151515;
-  background: rgba(0,0,0,.75);
+  background: rgba(0,0,0,.65);
   padding-left: 20px;
   padding-right: 20px;
   .carousel-inner {
@@ -448,31 +448,32 @@ body.subpage {
 
   .carousel-wrapper {
     position: relative;
-    &:before {
-      content:"";
-      background-color: $primary;
-      background-image: url('images/BlueGridBg.png');
-      background-size: 100%;
-      background-position: bottom center;
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-    }
-    &:after {
-      content:"";
-      background-size: 100%;
-      background-position: bottom center;
-      background-repeat: no-repeat;
-      background-color: rgba(0,0,0,.65);
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-    }
+    background-color: rgba(0,0,0,.45);
+    // &:before {
+    //   content:"";
+    //   background-color: $primary;
+    //   background-image: url('images/BlueGridBg.png');
+    //   background-size: 100%;
+    //   background-position: bottom center;
+    //   background-repeat: no-repeat;
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: 0;
+    //   width: 100%;
+    //   height: 100%;
+    // }
+    // &:after {
+    //   content:"";
+    //   background-size: 100%;
+    //   background-position: bottom center;
+    //   background-repeat: no-repeat;
+    //   background-color: rgba(0,0,0,.65);
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: 0;
+    //   width: 100%;
+    //   height: 100%;
+    // }
     .carousel-inner {
       z-index: 10;
     }
@@ -529,7 +530,6 @@ body.subpage {
     .carousel-wrapper {
       // background: rgba(0,0,0,.5);
       overflow: hidden;
-      background: transparent;
       &:before {
         display: none;
       }
