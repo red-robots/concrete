@@ -6,6 +6,15 @@
 
 jQuery(document).ready(function ($) {
 
+  $('#menu-toggle').on('click',function(){
+    $(this).toggleClass('active');
+    $('#site-navigation').toggleClass('active');
+    $('.mobileOverlay').toggleClass('active');
+  });
+  $('#closeMenu').on('click',function(){
+    $('#menu-toggle').trigger('click');
+  });
+
   $('.main-navigation ul.menu > li').each(function(){
     var str = $(this).text().trim().toLowerCase();
     var slug = slugify(str);
@@ -36,6 +45,7 @@ jQuery(document).ready(function ($) {
     loop:true,
     margin:0,
     nav:true,
+    items:1,
     responsiveClass:true,
     responsive:{
         0:{
@@ -47,11 +57,11 @@ jQuery(document).ready(function ($) {
           nav:false,
         },
         800:{
-          items:3,
+          items:2,
           nav:false,
         },
         1300:{
-          items:4,
+          items:3,
           nav:true,
           loop:false
         },

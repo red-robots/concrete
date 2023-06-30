@@ -47,11 +47,9 @@ var params={};location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){
 
         <nav id="site-navigation" class="main-navigation animated fadeInDown" role="navigation">
           <span id="closeMenu" class="menu-toggle"><span class="bar"></span></span>
-          <?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu','link_before'=>'<span>','link_after'=>'</span>','container_class'=>'menu-wrapper') ); 
-          wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu','container_class'=>'menu-wrapper') );
-          ?>
+          <?php  wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu','container_class'=>'menu-wrapper') ); ?>
         </nav><!-- #site-navigation -->
-
+        <div class="mobileOverlay"></div>
         <span id="menu-toggle" class="menu-toggle"><span class="sr">Menu</span><span class="bar"></span></span>
       </div>
 		</div>

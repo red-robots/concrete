@@ -1,36 +1,28 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package bellaworks
- */
-$banner = get_field("banner_image");
-$has_banner = ($banner) ? 'hasbanner':'nobanner';
-global $post;
-get_header(); ?>
+$post_id = get_the_ID();
+$img = get_field('main_photo', $post_id);
 
-<div id="primary" class="content-area-full content-default page-default-template <?php echo $has_banner ?>">
-	<main id="main" class="site-main wrapper" role="main">
+get_header(); ?>
+<div id="primary" class="content-area-full project-single-content <?php echo $has_banner ?>">
+  <?php if($img) { ?>
+    <figure class="project-main-image">
+      <div class="img" style="background-image:url('<?php echo $img['url']?>')"></div>
+      <img src="<?php echo $img['url']?>" alt="<?php echo $img['title']?>" />
+    </figure>
+  <?php } ?>
+  <main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php if( get_page_template_slug( get_the_ID() ) ) { ?>
-        <div class="titlediv">
-          <h1 class="page-title"><?php the_title(); ?></h1>
-        </div>
-      <?php } else { ?>
 
         <div class="titlediv typical">
           <h1 class="page-title"><span><?php the_title(); ?></span></h1>
         </div>
 
-      <?php } ?>
-
       <?php if ( get_the_content() ) { ?>
-			<div class="entry-content padtop">
-				<?php the_content(); ?>
+			<div class="entry-content">
+        <div class="wrapper">
+				  <?php the_content(); ?>
+        </div>
 			</div>
       <?php } ?>
 

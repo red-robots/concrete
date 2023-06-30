@@ -1,6 +1,13 @@
 	</div><!-- #content -->
 
-  <?php get_template_part('parts/carousel');  ?>
+  <?php if( is_single() ) {
+      if( get_post_type()=='projects' ) {
+        get_template_part('parts/carousel-project');  
+      } else {
+        get_template_part('parts/carousel');  
+      }
+    }
+  ?>
   
 	<?php  
 	$footer_logo = get_field("footer_logo","option");
