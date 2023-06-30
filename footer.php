@@ -6,7 +6,11 @@
       } else {
         get_template_part('parts/carousel');  
       }
+    } else {
+      get_template_part('parts/carousel'); 
     }
+
+    
   ?>
   
 	<?php  
