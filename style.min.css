@@ -1383,10 +1383,11 @@ body.subpage #content .wrapper{max-width:1100px;width:100%;margin:0 auto}
 body.subpage #content #primary{overflow:hidden}
 body.subpage #content #main{overflow:auto;height:100%;color:#fff;padding-top:0;padding-bottom:50px;background:#0f213c}
 body.subpage #content .generic-layout #main{padding-bottom:0}
-body.subpage #content .titlediv{text-align:center;width:100%;position:relative;left:0;top:0;background-image:url("images/BlueGridBg.png");background-size:cover;background-position:0 -21px;background-repeat:no-repeat}
+body.subpage #content .titlediv{text-align:center;width:100%;position:relative;left:0;top:0;background-image:url("images/BlueGridBg.png");background-size:cover;background-position:0 -21px;background-repeat:no-repeat;border-bottom:5px solid #0f213c}
 body.subpage #content .titlediv h1{font-size:2.5em;font-weight:600;line-height:1.2;letter-spacing:.2em;color:#fff;padding:15px 0;margin:0;text-transform:uppercase}
 body.subpage #content .entry-content{font-size:1.3em;line-height:1.3;position:relative;overflow:hidden}
 body.subpage #content .entry-content .wrapper{padding-top:30px;padding-bottom:30px}
+body.subpage #content .entry-content h2{color:#fff;margin-top:0}
 body.subpage .carousel-wrapper{position:relative;background-color:rgba(0,0,0,.45)}
 body.subpage .carousel-wrapper .carousel-inner{z-index:10}
 body.subpage.page-template-page-projects{overflow:auto}
@@ -1448,9 +1449,40 @@ body.single-projects.subpage #content #main .entry-content{background:rgba(0,0,0
 body.single-projects.subpage #content #main .entry-content .wrapper{padding-top:10px;padding-bottom:10px;text-align:center}
 body.single-projects.subpage #content #main .entry-content p{margin:0;font-size:2.2rem;line-height:1.2}
 body.logged-in.admin-bar .site-header{top:32px}
+.contact-page-template .flexwrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.contact-page-template .flexcol{width:100%;color:#fff;min-height:190px}
+.contact-page-template .flexcol img{width:100%;height:auto}
+.contact-page-template .flexcol h3{font-size:25px;font-weight:normal;line-height:1.2;margin:0;color:#fff}
+.contact-page-template .flexcol a{color:#fff;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.75)}
+body.subpage.page-template-page-contact #content #main{background:transparent;padding-bottom:0;margin:0}
+body.subpage.page-template-page-contact #content #main .entry-content{margin:50px 0;background:rgba(15,33,60,.45)}
+.button3D{text-align:center;padding:8px;position:relative;overflow:hidden;text-decoration:none}
+.button3D *{text-decoration:none}
+.button3D:before{content:"";width:102%;height:8px;position:absolute;top:0;left:-3px;border-top:8px solid rgba(118,118,118,.65);border-left:12px solid transparent;border-right:12px solid transparent;z-index:5}
+.button3D:after{content:"";width:102%;height:8px;position:absolute;bottom:0;left:-3px;border-bottom:8px solid rgba(0,0,0,.85);border-left:12px solid transparent;border-right:12px solid transparent}
+.button3D .ins{display:block;text-decoration:none;color:#fff;text-transform:uppercase;font-size:16px;line-height:1.2;letter-spacing:.05em;background:rgba(0,0,0,.75);position:relative;text-align:center;cursor:pointer}
+.button3D .ins:before{content:"";width:10px;height:150%;position:absolute;top:-4px;left:-10px;background:rgba(63,63,63,.85);-webkit-transform:skewY(35deg);transform:skewY(35deg)}
+.button3D .ins:after{content:"";width:10px;height:150%;position:absolute;top:-4px;right:-10px;background:rgba(63,63,63,.88);-webkit-transform:skewY(-35deg);transform:skewY(-35deg)}
+.button3D .txt{display:block;padding:6px 15px;overflow:hidden;-webkit-transition:all ease 1s;transition:all ease 1s;position:relative;cursor:pointer}
+.button3D .txt:before{content:"";display:block;width:20%;height:100%;position:absolute;top:0;left:-20%;opacity:0;background:rgba(255,255,255,.35);-webkit-transition:all ease 1s;transition:all ease 1s;-webkit-transform:skew(-45deg);transform:skew(-45deg)}
+.button3D:hover .txt:before{opacity:1;width:50%;left:50vw}
+body.subpage.page-template-page-careers #content #main{background:transparent}
+body.subpage.page-template-page-careers #content #main .entry-content{background:rgba(15,33,60,.45);padding-top:10px;padding-bottom:10px;margin-bottom:20px}
+body.subpage.page-template-page-careers #content #main .entry-content .wrapper{padding-top:0;padding-bottom:0;text-align:center}
+body.subpage.page-template-page-careers .careers-boxes{padding-top:40px}
+body.subpage.page-template-page-careers .careers-boxes .wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+body.subpage.page-template-page-careers .careers-boxes .box{width:100%;padding:30px}
+body.subpage.page-template-page-careers .careers-boxes .box figure{margin:0}
+body.subpage.page-template-page-careers .careers-boxes .box figure img{width:100%;height:auto}
+body.subpage.page-template-page-careers .careers-boxes .button3D{position:relative;top:-6px}
+body.subpage.page-template-page-careers .careers-boxes a{text-decoration:none}
+body.subpage.page-template-page-careers .careers-boxes a:hover .button3D .txt:before{opacity:1;width:50%;left:50vw}
 @media(min-width:600px){body.subpage.page-template-page-projects .categories .term{width:50%}
 }@media(min-width:960px){body.subpage.page-template-page-projects .categories .term{width:33.333%}
 .project-listing .item-info{width:25%}
+.contact-page-template .flexcol{width:33.333%}
+.contact-page-template .flexcol:nth-child(2){padding-left:3vw}
+body.subpage.page-template-page-careers .careers-boxes .box{width:48%}
 }@media screen and (max-width:1399px){.carousel-wrapper .owl-item{max-width:240px;padding-left:50px}
 .carousel-wrapper .owl-item:after{left:11px}
 .carousel-wrapper .customControl.control-previous{left:-75px}

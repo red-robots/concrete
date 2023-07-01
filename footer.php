@@ -9,8 +9,6 @@
     } else {
       get_template_part('parts/carousel'); 
     }
-
-    
   ?>
   
 	<?php  

@@ -424,6 +424,7 @@ body.subpage {
       background-size: cover;
       background-position: 0 -21px;
       background-repeat: no-repeat;
+      border-bottom: 5px solid $primary;
       h1 {
         font-size: 2.5em;
         font-weight: 600;
@@ -447,6 +448,10 @@ body.subpage {
         padding-bottom: 30px;
         // overflow: auto;
         // height: 50vh;
+      }
+      h2 {
+        color: #FFF;
+        margin-top: 0;
       }
     }
   }
@@ -1050,6 +1055,205 @@ body.logged-in.admin-bar {
   body.subpage {
     #content {
       padding-top: 80px;
+    }
+  }
+}
+
+.contact-page-template {
+  .flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexcol {
+    width: 100%;
+    color: #FFF;
+    min-height: 190px;
+    @include tab {
+      width: 33.333%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    h3 {
+      font-size: 25px;
+      font-weight: normal;
+      line-height: 1.2;
+      margin: 0 0;
+      color: #FFF;
+    }
+    a {
+      color: #FFF;
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(255,255,255,.75);
+    }
+  }
+  .flexcol:nth-child(2) {
+    @include tab {
+      padding-left: 3vw;
+    }
+  }
+}
+body.subpage.page-template-page-contact  {
+  #content #main {
+    background: transparent;
+    padding-bottom: 0;
+    margin: 0 0;
+    .entry-content {
+      margin: 50px 0;
+      background: rgba($primary, 45%);
+    }
+  }
+}
+
+.button3D {
+  text-align: center;
+  padding: 8px;
+  position: relative;
+  overflow:hidden;
+  text-decoration: none;
+  * {
+    text-decoration: none;
+  }
+  &:before {
+    content: "";
+    width: 102%;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: -3px;
+    border-top: 8px solid rgba(118,118,118,.65);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    z-index: 5;
+  }
+  &:after {
+    content: "";
+    width: 102%;
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    left: -3px;
+    border-bottom: 8px solid rgba(0,0,0,.85);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+  }
+  .ins {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: .05em;
+    background: rgba(0,0,0,.75);
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    &:before {
+      content: "";
+      width: 10px;
+      height: 150%;
+      position: absolute;
+      top: -4px;
+      left: -10px;
+      background: rgba(63,63,63,.85);
+      transform: skewY(35deg);
+    }
+    &:after {
+      content: "";
+      width: 10px;
+      height: 150%;
+      position: absolute;
+      top: -4px;
+      right: -10px;
+      background: rgba(63,63,63,.88);
+      transform: skewY(-35deg);
+    }
+  }
+  .txt {
+    display: block;
+    padding: 6px 15px;
+    overflow: hidden;
+    transition: all ease 1s;
+    position: relative;
+    cursor: pointer;
+    &:before {
+      content: "";
+      display: block;
+      width: 20%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -20%;
+      opacity: 0;
+      background: rgba(255,255,255,.35);
+      transition: all ease 1s;
+      transform: skew(-45deg);
+    }
+  }
+  &:hover {
+    .txt:before {
+      opacity: 1;
+      width: 50%;
+      left: 50vw;
+    }
+  }
+}
+
+body.subpage.page-template-page-careers {
+  #content #main {
+    background: transparent;
+    .entry-content {
+      background: rgba($primary, 45%);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      .wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+  .careers-boxes {
+    padding-top: 40px;
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content:center;
+    }
+    .box {
+      width: 100%;
+      padding: 30px;
+      @include tab {
+        width: 48%;
+      }
+
+      figure {
+        margin: 0 0;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .button3D {
+      position: relative;
+      top: -6px;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        .button3D .txt:before {
+          opacity: 1;
+          width: 50%;
+          left: 50vw;
+        }
+      }
     }
   }
 }
