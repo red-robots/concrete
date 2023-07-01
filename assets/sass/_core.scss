@@ -1096,6 +1096,13 @@ body.logged-in.admin-bar {
     }
   }
 }
+body.subpage.page-template-page-careers,
+body.subpage.page-template-page-contact {
+  #content .titlediv {
+    background-image: none;
+    background-color: rgba(0,0,0,.25);
+  }
+}
 body.subpage.page-template-page-contact  {
   #content #main {
     background: transparent;
@@ -1204,6 +1211,9 @@ body.subpage.page-template-page-contact  {
 }
 
 body.subpage.page-template-page-careers {
+  #content .titlediv {
+    background-image: none!important;
+  }
   #content #main {
     background: transparent;
     .entry-content {

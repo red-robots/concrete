@@ -1454,6 +1454,7 @@ body.logged-in.admin-bar .site-header{top:32px}
 .contact-page-template .flexcol img{width:100%;height:auto}
 .contact-page-template .flexcol h3{font-size:25px;font-weight:normal;line-height:1.2;margin:0;color:#fff}
 .contact-page-template .flexcol a{color:#fff;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.75)}
+body.subpage.page-template-page-careers #content .titlediv,body.subpage.page-template-page-contact #content .titlediv{background-image:none;background-color:rgba(0,0,0,.25)}
 body.subpage.page-template-page-contact #content #main{background:transparent;padding-bottom:0;margin:0}
 body.subpage.page-template-page-contact #content #main .entry-content{margin:50px 0;background:rgba(15,33,60,.45)}
 .button3D{text-align:center;padding:8px;position:relative;overflow:hidden;text-decoration:none}
@@ -1466,6 +1467,7 @@ body.subpage.page-template-page-contact #content #main .entry-content{margin:50p
 .button3D .txt{display:block;padding:6px 15px;overflow:hidden;-webkit-transition:all ease 1s;transition:all ease 1s;position:relative;cursor:pointer}
 .button3D .txt:before{content:"";display:block;width:20%;height:100%;position:absolute;top:0;left:-20%;opacity:0;background:rgba(255,255,255,.35);-webkit-transition:all ease 1s;transition:all ease 1s;-webkit-transform:skew(-45deg);transform:skew(-45deg)}
 .button3D:hover .txt:before{opacity:1;width:50%;left:50vw}
+body.subpage.page-template-page-careers #content .titlediv{background-image:none !important}
 body.subpage.page-template-page-careers #content #main{background:transparent}
 body.subpage.page-template-page-careers #content #main .entry-content{background:rgba(15,33,60,.45);padding-top:10px;padding-bottom:10px;margin-bottom:20px}
 body.subpage.page-template-page-careers #content #main .entry-content .wrapper{padding-top:0;padding-bottom:0;text-align:center}
