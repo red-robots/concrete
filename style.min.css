@@ -1644,6 +1644,10 @@ body.subpage.page-template-page-careers .careers-boxes .box{width:48%}
 #menu-toggle span.bar:after{top:9px}
 body.subpage #content{padding-top:80px}
 }@media screen and (max-width:1200px){.carousel-wrapper .carousel-inner{max-width:700px}
+}@media screen and (max-width:1199px){#gform_wrapper_1 .ginput_container{width:100% !important}
+#gform_wrapper_1 #field_1_11 .address_state .gform-field-label{display:none !important}
+#gform_wrapper_1 #field_1_20 .gfield_checkbox{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+#gform_wrapper_1 #field_1_20 .gfield_checkbox div{width:50% !important;margin:2px 0 !important}
 }@media screen and (max-width:800px){.carousel-wrapper .carousel-inner{max-width:620px}
 .carousel-wrapper .owl-item{padding-left:30px}
 .carousel-wrapper .owl-item:after{left:-7px}

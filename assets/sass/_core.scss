@@ -1475,6 +1475,28 @@ body.single-projects.subpage {
   .gform_footer {
     margin-top: 30px;
   }
+
+  @media screen and (max-width: 1199px) {
+    .ginput_container {
+      width: 100%!important;
+    }
+    #field_1_11 .address_state {
+      .gform-field-label {
+        display: none!important;
+      }
+    }
+
+    #field_1_20 {
+      .gfield_checkbox {
+        display: flex;
+        flex-wrap: wrap;
+        div {
+          width: 50%!important;
+          margin: 2px 0!important;
+        }
+      }
+    }
+  }
 }
 
 body.logged-in.admin-bar {
