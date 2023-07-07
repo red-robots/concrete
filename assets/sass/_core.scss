@@ -209,11 +209,13 @@ h1,h2,h3,h4,h5,h6 {
     padding-left: 0;
   }
   .thumbnail {
+    display: inline-block;
     width: 190px;
     height: 118px;
     position: relative;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0 0;
     .frame {
       position: absolute;
       top: 0;
@@ -237,13 +239,6 @@ h1,h2,h3,h4,h5,h6 {
       background-repeat: no-repeat;
       background-color: #000;
       border-radius: 5px;
-    }
-  }
-  figure {
-    margin: 0 0;
-    img {
-      width: 100%;
-      height: auto;
     }
   }
 
@@ -768,6 +763,13 @@ body.subpage {
       }
     }
   }
+
+  /* Application Form Page */
+  &.page-id-11 {
+    .carousel-wrapper {
+      position: relative!important;
+    }
+  }
 }
 body.subpage.archive {
   #content #main {
@@ -894,6 +896,584 @@ body.single-projects.subpage {
         line-height: 1.2;
       }
     }
+  }
+}
+
+/* Application Form */
+#gform_wrapper_1 {
+  #gform_1 {
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    select, textarea {
+      // border: 1px solid rgba(255,255,255,.5);
+      border: none!important;
+      border-radius: 3px;
+      // background: linear-gradient(to bottom, #ffffff 0%,#0f213c 96%);
+      background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(15,33,60,1) 100%);
+      box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset;
+      padding: 0px 5px 3px;
+      height: 25px;
+      font-size: 15px;
+      font-weight: 500;
+      width: 100%;
+    }
+    .gform_fields {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .gfield {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      position: relative;
+      .gfield_label {
+        font-weight: 500!important;
+        width: 100%;
+        padding-right: 5px;
+        @include tab {
+          width: unset;
+          margin: 0 0;
+        }
+      }
+    }
+
+    /* Position Applying For */
+    #field_1_1 {
+      width: 100%;
+      @include tab {
+        width: 60%;
+      }
+      .gfield_label {
+        text-transform: uppercase;
+      }
+      .ginput_container {
+        width: 100%;
+        @include tab {
+          width: 72%;
+        }
+      }
+    }
+
+    /* DATE */
+    #field_1_3 {
+      width: 100%;
+      @include desk {
+        width: 38%;
+        left: 5px;
+      }
+      .gfield_label {
+        text-transform: uppercase;
+      }
+      .ginput_container {
+        width: 100%;
+        @include desk {
+          width: 63%;
+        }
+      }
+    }
+
+    /* Legal Name */
+    #field_1_4 {
+      width: 100%;
+      legend.gfield_label {
+        display: inline-block;
+        float: left;
+        padding-right: 10px;
+        text-transform: uppercase;
+      }
+      .ginput_complex {
+        width: 100%;
+        @include desk {
+          width: 80.8%;
+        }
+        span {
+          position: relative;
+          @include desk {
+            .gform-field-label {
+              display: inline-block;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            &.name_first {
+              padding-left: 30px;
+            }
+            &.name_middle {
+              padding-left: 46px;
+              padding-right: 10px;
+            }
+            &.name_last {
+              padding-left: 28px;
+            }
+          }
+          
+        }
+      }
+    }
+
+    /* Address */
+    #field_1_5 {
+      width: 100%;
+      legend.gfield_label {
+        display: inline-block;
+        float: left;
+        padding-right: 10px;
+        text-transform: uppercase;
+      }
+      .ginput_complex {
+        @include desk {
+          width: 86.5%;
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 7px;
+          position: relative;
+          top: 3px;
+        }
+        span {
+          position: relative;
+          flex: none;
+          @include desk {
+            label {
+              display: inline-block;
+              position: absolute;
+              left: 0;
+            }
+            &.ginput_address_line_1 {
+              padding-left: 40px;
+              width: 42%;
+            }
+            &.address_city {
+              padding-left: 28px;
+              width: 27%;
+            }
+            &.address_state {
+              padding-left: 35px;
+              width: 15%;
+            }
+            &.address_zip {
+              padding-left: 25px;
+              padding-right: 0;
+              width: 13%;
+            }
+          }
+        }
+      }
+    }
+
+    #field_1_6 {
+      @include desk {
+        width: 48%;
+        .ginput_container {
+          width: 65%;
+        }
+      }
+    }
+    #field_1_7 {
+      @include desk {
+        width: 48%;
+        .ginput_container {
+          width: 66%;
+        }
+      }
+    }
+    #field_1_8 {
+      @include desk {
+        width: 45%;
+        .ginput_container {
+          width: 75%;
+        }
+      }
+    }
+    #field_1_9 {
+      @include desk {
+        width: 50%;
+        .ginput_container {
+          width: 51%;
+        }
+      }
+    }
+    #field_1_10 {
+      @include desk {
+        width: 50%;
+        .ginput_container {
+          width: 45%;
+        }
+      }
+    }
+    #field_1_11 {
+      @include desk {
+        width: 48%;
+        .ginput_container {
+          width: 35%;
+        }
+        .ginput_complex {
+          float: left;
+          padding-left: 10px;
+        }
+        .gfield_label {
+          float: left;
+        }
+        .address_state {
+          flex: none;
+          position: relative;
+          padding-left: 0;
+          width: 90%;
+          label {
+            display: none!important;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    #field_1_12 {
+      width: 100%;
+      @include desk {
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+      }
+    }
+
+    #field_1_13 {
+      width: 100%;
+      @include tab {
+        .ginput_container {
+          width: 65%;
+        }
+      }
+    }
+    #field_1_14 {
+      width: 100%;
+      @include desk {
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+      }
+    }
+    #field_1_16 {
+      width: 100%;
+      @include desk {
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+      }
+    }
+    #field_1_17 {
+      width: 100%;
+      @include desk {
+        width: 48%;
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        .ginput_container {
+          width: 65%;
+        }
+      }
+    }
+    #field_1_18 {
+      width: 100%;
+      @include desk {
+        width: 40%;
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        .ginput_container {
+          width: 40%;
+        }
+      }
+    }
+    #field_1_19 {
+      width: 100%;
+      @include desk {
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        .ginput_container_checkbox {
+          position: relative;
+          left: 2px;
+        }
+        .gfield_checkbox div {
+          width: 115px;
+          margin-right: 0;
+        }
+        label.gform-field-label {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    #field_1_20 {
+      @include desk {
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        .ginput_container_checkbox {
+          position: relative;
+          left: 2px;
+          width: 100%;
+        }
+        .gfield_checkbox {
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          button.gfield_choice_all_toggle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0 0;
+          }
+        }
+        .gfield_checkbox div {
+          width: 30%;
+          margin-right: 0;
+        }
+        label.gform-field-label {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    #field_1_21 {
+      width: 100%;
+      @include desk {
+        .ginput_container {
+          width: 60%;
+        }
+      }
+    }
+    #field_1_22 {
+      width: 100%;
+      @include desk {
+        
+      }
+    }
+    #field_1_23 {
+      width: 100%;
+      @include desk {
+        .ginput_container {
+          width: 60%;
+        }
+      }
+    }
+    #field_1_24 {
+      width: 100%;
+      @include desk {
+        width: 48%;
+        .ginput_container {
+          width: 70%;
+        }
+      }
+    }
+    #field_1_25 {
+      width: 100%;
+      @include desk {
+        width: 48%;
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        .ginput_container {
+          width: 63.5%;
+        }
+      }
+    }
+    #field_1_26 {
+      width: 100%;
+      @include desk {
+        width: 48%;
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        .ginput_container {
+          width: 63.5%;
+        }
+      }
+    }
+    #field_1_27 {
+      width: 100%;
+      @include desk {
+        width: 48%;
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        .ginput_container {
+          width: 60%;
+        }
+      }
+    }
+    #field_1_28 {
+      width: 100%;
+      @include desk {
+        .ginput_container {
+          width: 50%;
+        }
+      }
+    }
+    #field_1_30 {
+      width: 100%;
+      @include desk {
+        width: 48%;
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        .ginput_container {
+          width: 60%;
+        }
+      }
+    }
+    #field_1_29 {
+      width: 100%;
+    }
+
+    #field_1_31 {
+      width: 100%;
+      @include desk {
+        width: 50%;
+        .ginput_container {
+          width: 64%;
+        }
+      }
+    }
+    #field_1_32 {
+      width: 100%;
+      @include desk {
+        width: 50%;
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        .ginput_container {
+          width: 61%;
+        }
+      }
+    }
+    #field_1_33 {
+      width: 100%;
+      @include desk {
+        width: 45%;
+        legend.gfield_label, .ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        .ginput_container {
+          width: 71%;
+        }
+      }
+    }
+
+    #field_1_34 {
+      @include desk {
+        .ginput_container {
+          width: 33%;
+        }
+      } 
+    }
+
+    #field_1_39 {
+      width: 100%;
+      .gfield_label {
+        display: none!important;
+      }
+    }
+  }
+  .gfield_checkbox {
+    position: relative;
+    top: -2px;
+    div {
+      display: inline-block;
+      float: left;
+      margin-right: 15px;
+      position: relative;
+      overflow: hidden;
+    }
+    input[type="checkbox"] {
+      position: absolute;
+      top: 7px;
+      left: 1px;
+      opacity: 0;
+    }
+    label {
+      display: inline-block;
+      position: relative;
+      padding-left: 20px;
+      &:before {
+        content:"";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(15,33,60,1) 100%);
+        box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset;
+        position: absolute;
+        top: 2px;
+        left: 0;
+      }
+    }
+    input[type="checkbox"]:checked + label:after {
+      content:"\2713";
+      display: inline-block;
+      position: absolute;
+      top: -7px;
+      left: 1px;
+      z-index: 1;
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+  h3 {
+    color: #FFF!important;
+  }
+  button[type="button"] {
+    border: none!important;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(15,33,60,1) 100%);
+    box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset;
+    padding: 3px 5px 3px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .gform_button.button {
+    appearance: none;
+    border: 1px solid #0f213c;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: all .3s;
+    display: block;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(15,33,60,1) 100%);
+    -webkit-text-stroke: 1px #0f213c;
+    &:hover, &:focus {
+      transform: translateY(-3px);
+      // box-shadow: 0 2px 15px #1451aa;
+      box-shadow: 0 0 0 3px #1451A6;
+    }
+  }
+  .gform_footer {
+    margin-top: 30px;
   }
 }
 
@@ -1111,6 +1691,11 @@ body.subpage.page-template-page-contact  {
     .entry-content {
       margin: 50px 0;
       background: rgba($primary, 45%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .flexcol {
+      text-align:center;
     }
   }
 }

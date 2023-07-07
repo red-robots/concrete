@@ -21,10 +21,10 @@ if( $carouselItems ) { ?>
         $img = get_field('main_photo', $c->ID);
         $firstBatch[] = $c->ID;
         if($img) { ?>
-        <figure class="thumbnail" data-pid="<?php echo $c->ID ?>" data-title="<?php echo $c->post_title ?>">
+        <a href="<?php echo get_permalink()?>" class="thumbnail" data-pid="<?php echo $c->ID ?>" data-title="<?php echo $c->post_title ?>">
           <div class="frame"></div>
           <div class="img" style="background-image:url('<?php echo $img['sizes']['medium'] ?>')"></div>
-        </figure>
+        </a>
         <?php } ?>
       <?php } ?>
 
@@ -44,10 +44,10 @@ if( $carouselItems ) { ?>
       if ( $projects->have_posts() ) { ?>
         <?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
           <?php if( $img = get_field('main_photo') ) { ?>
-          <figure class="thumbnail" data-pid="<?php the_ID(); ?>" data-title="<?php echo get_the_title(); ?>">
+          <a href="<?php echo get_permalink()?>" class="thumbnail" data-pid="<?php the_ID(); ?>" data-title="<?php echo get_the_title(); ?>">
             <div class="frame"></div>
             <div class="img" style="background-image:url('<?php echo $img['sizes']['medium'] ?>')"></div>
-          </figure>
+          </a>
           <?php } ?>
         <?php endwhile; wp_reset_postdata(); ?>
       <?php } ?>

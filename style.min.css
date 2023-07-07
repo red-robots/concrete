@@ -1364,11 +1364,9 @@ h1,h2,h3,h4,h5,h6{font-family:"Calibri",sans-serif;color:#000;letter-spacing:.03
 .hero div.image{position:relative;top:0;left:0;width:100%;height:100%;background-size:cover;background-repeat:no-repeat;background-position:center}
 .carousel-wrapper{width:100%;position:fixed;bottom:0;left:0;z-index:200;border-top:9px solid #151515;border-bottom:22px solid #151515;background:rgba(0,0,0,.65);padding-left:20px;padding-right:20px}
 .carousel-wrapper .carousel-inner{max-width:1290px;width:100%;margin:0 auto;position:relative;padding-top:23px;padding-bottom:23px;padding-left:0}
-.carousel-wrapper .thumbnail{width:190px;height:118px;position:relative;border-radius:6px;overflow:hidden}
+.carousel-wrapper .thumbnail{display:inline-block;width:190px;height:118px;position:relative;border-radius:6px;overflow:hidden;margin:0}
 .carousel-wrapper .thumbnail .frame{position:absolute;top:0;left:0;width:100%;height:100%;z-index:5;background-image:url("images/thumbnail-frame.png");background-size:100%;background-position:center;background-repeat:no-repeat}
 .carousel-wrapper .thumbnail .img{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#000;border-radius:5px}
-.carousel-wrapper figure{margin:0}
-.carousel-wrapper figure img{width:100%;height:auto}
 .carousel-wrapper .owl-carousel{left:-20px}
 .carousel-wrapper .owl-item{margin:0 0 !important;padding:0 0 0 55px;position:relative}
 .carousel-wrapper .owl-item:after{content:"";display:block;width:24px;height:93px;background-image:url("images/VerticalSpacerBars.png");background-size:100%;background-position:center;background-repeat:no-repeat;position:absolute;top:13px;left:8px}
@@ -1426,6 +1424,7 @@ body.subpage.page-template-page-projects .categories .term figure .b1:after{cont
 body.subpage.page-template-page-projects .categories .term figure .b2{display:block;width:100%;height:100%;position:absolute;top:0;left:0;z-index:2}
 body.subpage.page-template-page-projects .categories .term figure .b2:before{content:"";width:10px;height:150%;position:absolute;top:3px;left:0;background:rgba(63,63,63,.85);-webkit-transform:skewY(35deg);transform:skewY(35deg)}
 body.subpage.page-template-page-projects .categories .term figure .b2:after{content:"";width:10px;height:150%;position:absolute;top:3px;right:0;-webkit-filter:sepia(1);filter:sepia(1);background:rgba(27,27,27,.88);-webkit-transform:skewY(-35deg);transform:skewY(-35deg)}
+body.subpage.page-id-11 .carousel-wrapper{position:relative !important}
 body.subpage.archive #content #main{background:transparent;padding-top:0;padding-bottom:60px}
 body.subpage.archive .titlediv{border-bottom:5px solid #0f213c}
 .projects-wrapper{padding-top:50px}
@@ -1448,6 +1447,56 @@ body.single-projects.subpage #content #main .titlediv{border-bottom:5px solid #0
 body.single-projects.subpage #content #main .entry-content{background:rgba(0,0,0,.35);border-bottom:5px solid #0f213c}
 body.single-projects.subpage #content #main .entry-content .wrapper{padding-top:10px;padding-bottom:10px;text-align:center}
 body.single-projects.subpage #content #main .entry-content p{margin:0;font-size:2.2rem;line-height:1.2}
+#gform_wrapper_1 #gform_1 input[type=text],#gform_wrapper_1 #gform_1 input[type=email],#gform_wrapper_1 #gform_1 input[type=number],#gform_wrapper_1 #gform_1 input[type=tel],#gform_wrapper_1 #gform_1 select,#gform_wrapper_1 #gform_1 textarea{border:none !important;border-radius:3px;background:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.6)),to(#0f213c));background:linear-gradient(to bottom,rgba(255,255,255,0.6) 0,#0f213c 100%);-webkit-box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;padding:0 5px 3px;height:25px;font-size:15px;font-weight:500;width:100%}
+#gform_wrapper_1 #gform_1 .gform_fields{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+#gform_wrapper_1 #gform_1 .gfield{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative}
+#gform_wrapper_1 #gform_1 .gfield .gfield_label{font-weight:500 !important;width:100%;padding-right:5px}
+#gform_wrapper_1 #gform_1 #field_1_1{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_1 .gfield_label{text-transform:uppercase}
+#gform_wrapper_1 #gform_1 #field_1_1 .ginput_container{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_3{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_3 .gfield_label{text-transform:uppercase}
+#gform_wrapper_1 #gform_1 #field_1_3 .ginput_container{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_4{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_4 legend.gfield_label{display:inline-block;float:left;padding-right:10px;text-transform:uppercase}
+#gform_wrapper_1 #gform_1 #field_1_4 .ginput_complex{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_4 .ginput_complex span{position:relative}
+#gform_wrapper_1 #gform_1 #field_1_5{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_5 legend.gfield_label{display:inline-block;float:left;padding-right:10px;text-transform:uppercase}
+#gform_wrapper_1 #gform_1 #field_1_5 .ginput_complex span{position:relative;-webkit-box-flex:0;-ms-flex:none;flex:none}
+#gform_wrapper_1 #gform_1 #field_1_12{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_13{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_14{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_16{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_17{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_18{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_19{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_21{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_22{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_23{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_24{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_25{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_26{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_27{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_28{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_30{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_29{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_31{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_32{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_33{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_39{width:100%}
+#gform_wrapper_1 #gform_1 #field_1_39 .gfield_label{display:none !important}
+#gform_wrapper_1 .gfield_checkbox{position:relative;top:-2px}
+#gform_wrapper_1 .gfield_checkbox div{display:inline-block;float:left;margin-right:15px;position:relative;overflow:hidden}
+#gform_wrapper_1 .gfield_checkbox input[type=checkbox]{position:absolute;top:7px;left:1px;opacity:0}
+#gform_wrapper_1 .gfield_checkbox label{display:inline-block;position:relative;padding-left:20px}
+#gform_wrapper_1 .gfield_checkbox label:before{content:"";display:block;width:15px;height:15px;border-radius:3px;background:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.6)),to(#0f213c));background:linear-gradient(to bottom,rgba(255,255,255,0.6) 0,#0f213c 100%);-webkit-box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;position:absolute;top:2px;left:0}
+#gform_wrapper_1 .gfield_checkbox input[type=checkbox]:checked+label:after{content:"✓";display:inline-block;position:absolute;top:-7px;left:1px;z-index:1;color:#fff;font-size:20px}
+#gform_wrapper_1 h3{color:#fff !important}
+#gform_wrapper_1 button[type=button]{border:none !important;border-radius:3px;background:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.6)),to(#0f213c));background:linear-gradient(to bottom,rgba(255,255,255,0.6) 0,#0f213c 100%);-webkit-box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;padding:3px 5px 3px;height:25px;font-size:15px;font-weight:500}
+#gform_wrapper_1 .gform_button.button{-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #0f213c;border-radius:5px;padding:10px 30px;font-size:20px;font-weight:600;color:#fff;text-transform:uppercase;-webkit-transition:all .3s;transition:all .3s;display:block;width:200px;text-align:center;-webkit-box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;background:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.9)),to(#0f213c));background:linear-gradient(to bottom,rgba(255,255,255,0.9) 0,#0f213c 100%);-webkit-text-stroke:1px #0f213c}
+#gform_wrapper_1 .gform_button.button:hover,#gform_wrapper_1 .gform_button.button:focus{-webkit-transform:translateY(-3px);transform:translateY(-3px);-webkit-box-shadow:0 0 0 3px #1451a6;box-shadow:0 0 0 3px #1451a6}
+#gform_wrapper_1 .gform_footer{margin-top:30px}
 body.logged-in.admin-bar .site-header{top:32px}
 .contact-page-template .flexwrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .contact-page-template .flexcol{width:100%;color:#fff;min-height:190px}
@@ -1482,9 +1531,87 @@ body.subpage.page-template-page-careers .careers-boxes a:hover .button3D .txt:be
 @media(min-width:600px){body.subpage.page-template-page-projects .categories .term{width:50%}
 }@media(min-width:960px){body.subpage.page-template-page-projects .categories .term{width:33.333%}
 .project-listing .item-info{width:25%}
+#gform_wrapper_1 #gform_1 .gfield .gfield_label{width:unset;margin:0}
+#gform_wrapper_1 #gform_1 #field_1_1{width:60%}
+#gform_wrapper_1 #gform_1 #field_1_1 .ginput_container{width:72%}
+#gform_wrapper_1 #gform_1 #field_1_13 .ginput_container{width:65%}
 .contact-page-template .flexcol{width:33.333%}
 .contact-page-template .flexcol:nth-child(2){padding-left:3vw}
 body.subpage.page-template-page-careers .careers-boxes .box{width:48%}
+}@media(min-width:1200px){#gform_wrapper_1 #gform_1 #field_1_3{width:38%;left:5px}
+#gform_wrapper_1 #gform_1 #field_1_3 .ginput_container{width:63%}
+#gform_wrapper_1 #gform_1 #field_1_4 .ginput_complex{width:80.8%}
+#gform_wrapper_1 #gform_1 #field_1_4 .ginput_complex span .gform-field-label{display:inline-block;position:absolute;top:0;left:0}
+#gform_wrapper_1 #gform_1 #field_1_4 .ginput_complex span.name_first{padding-left:30px}
+#gform_wrapper_1 #gform_1 #field_1_4 .ginput_complex span.name_middle{padding-left:46px;padding-right:10px}
+#gform_wrapper_1 #gform_1 #field_1_4 .ginput_complex span.name_last{padding-left:28px}
+#gform_wrapper_1 #gform_1 #field_1_5 .ginput_complex{width:86.5%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-left:7px;position:relative;top:3px}
+#gform_wrapper_1 #gform_1 #field_1_5 .ginput_complex span label{display:inline-block;position:absolute;left:0}
+#gform_wrapper_1 #gform_1 #field_1_5 .ginput_complex span.ginput_address_line_1{padding-left:40px;width:42%}
+#gform_wrapper_1 #gform_1 #field_1_5 .ginput_complex span.address_city{padding-left:28px;width:27%}
+#gform_wrapper_1 #gform_1 #field_1_5 .ginput_complex span.address_state{padding-left:35px;width:15%}
+#gform_wrapper_1 #gform_1 #field_1_5 .ginput_complex span.address_zip{padding-left:25px;padding-right:0;width:13%}
+#gform_wrapper_1 #gform_1 #field_1_6{width:48%}
+#gform_wrapper_1 #gform_1 #field_1_6 .ginput_container{width:65%}
+#gform_wrapper_1 #gform_1 #field_1_7{width:48%}
+#gform_wrapper_1 #gform_1 #field_1_7 .ginput_container{width:66%}
+#gform_wrapper_1 #gform_1 #field_1_8{width:45%}
+#gform_wrapper_1 #gform_1 #field_1_8 .ginput_container{width:75%}
+#gform_wrapper_1 #gform_1 #field_1_9{width:50%}
+#gform_wrapper_1 #gform_1 #field_1_9 .ginput_container{width:51%}
+#gform_wrapper_1 #gform_1 #field_1_10{width:50%}
+#gform_wrapper_1 #gform_1 #field_1_10 .ginput_container{width:45%}
+#gform_wrapper_1 #gform_1 #field_1_11{width:48%}
+#gform_wrapper_1 #gform_1 #field_1_11 .ginput_container{width:35%}
+#gform_wrapper_1 #gform_1 #field_1_11 .ginput_complex{float:left;padding-left:10px}
+#gform_wrapper_1 #gform_1 #field_1_11 .gfield_label{float:left}
+#gform_wrapper_1 #gform_1 #field_1_11 .address_state{-webkit-box-flex:0;-ms-flex:none;flex:none;position:relative;padding-left:0;width:90%}
+#gform_wrapper_1 #gform_1 #field_1_11 .address_state label{display:none !important;position:absolute;top:0;left:0}
+#gform_wrapper_1 #gform_1 #field_1_12 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_12 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_14 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_14 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_16 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_16 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_17{width:48%}
+#gform_wrapper_1 #gform_1 #field_1_17 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_17 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_17 .ginput_container{width:65%}
+#gform_wrapper_1 #gform_1 #field_1_18{width:40%}
+#gform_wrapper_1 #gform_1 #field_1_18 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_18 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_18 .ginput_container{width:40%}
+#gform_wrapper_1 #gform_1 #field_1_19 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_19 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_19 .ginput_container_checkbox{position:relative;left:2px}
+#gform_wrapper_1 #gform_1 #field_1_19 .gfield_checkbox div{width:115px;margin-right:0}
+#gform_wrapper_1 #gform_1 #field_1_19 label.gform-field-label{padding-left:20px}
+#gform_wrapper_1 #gform_1 #field_1_20 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_20 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_20 .ginput_container_checkbox{position:relative;left:2px;width:100%}
+#gform_wrapper_1 #gform_1 #field_1_20 .gfield_checkbox{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;position:relative}
+#gform_wrapper_1 #gform_1 #field_1_20 .gfield_checkbox button.gfield_choice_all_toggle{position:absolute;top:0;right:0;margin:0}
+#gform_wrapper_1 #gform_1 #field_1_20 .gfield_checkbox div{width:30%;margin-right:0}
+#gform_wrapper_1 #gform_1 #field_1_20 label.gform-field-label{padding-left:20px}
+#gform_wrapper_1 #gform_1 #field_1_21 .ginput_container{width:60%}
+#gform_wrapper_1 #gform_1 #field_1_23 .ginput_container{width:60%}
+#gform_wrapper_1 #gform_1 #field_1_24{width:48%}
+#gform_wrapper_1 #gform_1 #field_1_24 .ginput_container{width:70%}
+#gform_wrapper_1 #gform_1 #field_1_25{width:48%}
+#gform_wrapper_1 #gform_1 #field_1_25 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_25 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_25 .ginput_container{width:63.5%}
+#gform_wrapper_1 #gform_1 #field_1_26{width:48%}
+#gform_wrapper_1 #gform_1 #field_1_26 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_26 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_26 .ginput_container{width:63.5%}
+#gform_wrapper_1 #gform_1 #field_1_27{width:48%}
+#gform_wrapper_1 #gform_1 #field_1_27 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_27 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_27 .ginput_container{width:60%}
+#gform_wrapper_1 #gform_1 #field_1_28 .ginput_container{width:50%}
+#gform_wrapper_1 #gform_1 #field_1_30{width:48%}
+#gform_wrapper_1 #gform_1 #field_1_30 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_30 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_30 .ginput_container{width:60%}
+#gform_wrapper_1 #gform_1 #field_1_31{width:50%}
+#gform_wrapper_1 #gform_1 #field_1_31 .ginput_container{width:64%}
+#gform_wrapper_1 #gform_1 #field_1_32{width:50%}
+#gform_wrapper_1 #gform_1 #field_1_32 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_32 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_32 .ginput_container{width:61%}
+#gform_wrapper_1 #gform_1 #field_1_33{width:45%}
+#gform_wrapper_1 #gform_1 #field_1_33 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_33 .ginput_container{display:inline-block;float:left}
+#gform_wrapper_1 #gform_1 #field_1_33 .ginput_container{width:71%}
+#gform_wrapper_1 #gform_1 #field_1_34 .ginput_container{width:33%}
 }@media screen and (max-width:1399px){.carousel-wrapper .owl-item{max-width:240px;padding-left:50px}
 .carousel-wrapper .owl-item:after{left:11px}
 .carousel-wrapper .customControl.control-previous{left:-75px}
@@ -1527,6 +1654,7 @@ body.logged-in.admin-bar .site-header{top:46px}
 body.logged-in.admin-bar.subpage #content{padding-top:77px}
 }@media screen and (max-width:780px){.carousel-wrapper .carousel-inner{padding-left:60px}
 .carousel-wrapper .owl-carousel{overflow:hidden;max-width:530px;width:100%;margin:0 auto}
+}@media screen and (max-width:768px){body.subpage.page-template-page-contact .flexcol{text-align:center}
 }@media screen and (max-width:600px){.carousel-wrapper .carousel-inner{max-width:100%}
 .carousel-wrapper .owl-carousel{left:0}
 .carousel-wrapper .owl-item{max-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:0}

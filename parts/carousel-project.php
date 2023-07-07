@@ -19,10 +19,10 @@ if ( $projects->have_posts() ) { ?>
     <div id="carousel" class="owl-carousel">
       <?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
         <?php if( $img = get_field('main_photo') ) { ?>
-        <figure class="thumbnail" data-pid="<?php the_ID(); ?>" data-title="<?php echo get_the_title(); ?>">
+        <a href="<?php echo get_permalink()?>" class="thumbnail" data-pid="<?php the_ID(); ?>" data-title="<?php echo get_the_title(); ?>">
           <div class="frame"></div>
           <div class="img" style="background-image:url('<?php echo $img['sizes']['medium'] ?>')"></div>
-        </figure>
+        </a>
         <?php } ?>
       <?php endwhile; wp_reset_postdata(); ?>
     </div>
@@ -38,10 +38,10 @@ if ( $projects->have_posts() ) { ?>
       if ( $projects->have_posts() ) { ?>
         <?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
           <?php if( $img = get_field('main_photo') ) { ?>
-          <figure class="thumbnail" data-pid="<?php the_ID(); ?>" data-title="<?php echo get_the_title(); ?>">
+          <a href="<?php echo get_permalink()?>" class="thumbnail" data-pid="<?php the_ID(); ?>" data-title="<?php echo get_the_title(); ?>">
             <div class="frame"></div>
             <div class="img" style="background-image:url('<?php echo $img['url'] ?>')"></div>
-          </figure>
+          </a>
           <?php } ?>
         <?php endwhile; wp_reset_postdata(); ?>
     <?php } ?>

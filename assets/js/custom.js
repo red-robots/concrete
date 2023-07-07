@@ -83,7 +83,7 @@ jQuery(document).ready(function ($) {
   function adjustBottomCarousel() {
     if ($('.carousel-wrapper').length) {
       var headerHeight = $('.site-header').height();
-      var contentHeight = $('#main').height();
+      var contentHeight = $('#primary').height();
       var carouselHeight = $('.carousel-wrapper').height();
       var contentAndCarousel = headerHeight + contentHeight + carouselHeight;
 
