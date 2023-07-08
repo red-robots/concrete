@@ -1546,7 +1546,8 @@ body.logged-in.admin-bar {
     max-width: 320px;
     width: 100%;
     height: 100vh;
-    background: #FFF;
+    // background: #FFF;
+    background: $primary;
     z-index: -99;
     visibility: hidden;
     transform: translateX(100vw);
@@ -1565,11 +1566,21 @@ body.logged-in.admin-bar {
     }
     ul.menu > li {
       width: 100%;
+      margin: -1px 0!important;
     }
     ul.menu > li > a {
       display: block;
-      padding: 8px 10px;
+      padding: 9px 15px 10px;
       margin: 0 0;
+      color: #FFF;
+      background: linear-gradient(to bottom,rgb(255 255 255 / 24%) 0,#0f213c 100%);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      border-top: 1px solid rgba(255,255,255,.1);
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+    ul.menu > li:hover > a {
+      background: linear-gradient(to bottom,#0f213c 0,#0a1729 98%,rgba(255,255,255,0.5) 100%);
     }
 
     #closeMenu {
@@ -1579,6 +1590,7 @@ body.logged-in.admin-bar {
       position: absolute;
       top: 40px;
       right: 15px;
+      filter:invert(1);
       span.bar {
         display: block;
         width: 100%;
@@ -1610,6 +1622,7 @@ body.logged-in.admin-bar {
       z-index: 999;
       visibility: visible;
       transform: translateX(0);
+      border-left: 1px solid rgba(255,255,255,.2);
     }
   }
   .mobileOverlay {
@@ -1661,6 +1674,9 @@ body.logged-in.admin-bar {
     #content {
       padding-top: 80px;
     }
+  }
+  .site-header {
+    z-index: 202;
   }
 }
 
