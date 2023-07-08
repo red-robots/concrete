@@ -1878,6 +1878,57 @@ body.subpage.page-template-page-careers {
   }
 }
 
+.sitemap-content {
+  #sitemap-wrap {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 25em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .sitemap-links {
+    ul {
+      margin: 0 0;
+      padding: 0 0;
+      list-style: none;
+      li {
+        position: relative;
+        padding-left: 11px;
+        margin: 2px 0;
+        &:before {
+          content:"";
+          display:block;
+          // width: 6px;
+          // height: 6px;
+          // border-radius: 100px;
+          // border: 1px solid rgba(255,255,255,.75);
+          width: 0;
+          height: 0;
+          border-left: 4px solid #FFF;
+          border-top: 3px solid transparent;
+          border-bottom: 3px solid transparent;
+          position: absolute;
+          top: 11px;
+          left: 0;
+        }
+        ul {
+          padding-left: 20px;
+        }
+      }
+    }
+    a {
+      color: #FFF;
+      text-decoration: none;
+      font-size: 20px;
+      &:hover {
+        color: #72c0fb;
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 782px) {
   html #wpadminbar {
