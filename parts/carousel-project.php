@@ -17,9 +17,9 @@ if ( $projects->have_posts() ) { ?>
 <div id="carouselData" class="carousel-wrapper" data-perview="5" data-page="1" data-baseUrl="<?php echo get_permalink(); ?>">
   <div class="carousel-inner">
     <div id="carousel" class="owl-carousel">
-      <?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
+      <?php while ( $projects->have_posts() ) : $projects->the_post(); $id = get_the_ID(); ?>
         <?php if( $img = get_field('main_photo') ) { ?>
-        <a href="<?php echo get_permalink()?>" class="thumbnail" data-pid="<?php the_ID(); ?>" data-title="<?php echo get_the_title(); ?>">
+        <a href="<?php echo get_permalink()?>" class="thumbnail" data-pid="<?php echo $id; ?>" data-title="<?php echo get_the_title(); ?>">
           <div class="frame"></div>
           <div class="img" style="background-image:url('<?php echo $img['sizes']['medium'] ?>')"></div>
         </a>
@@ -36,9 +36,9 @@ if ( $projects->have_posts() ) { ?>
     <?php 
       $projects = new WP_Query($args);
       if ( $projects->have_posts() ) { ?>
-        <?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
+        <?php while ( $projects->have_posts() ) : $projects->the_post(); $id = get_the_ID(); ?>
           <?php if( $img = get_field('main_photo') ) { ?>
-          <a href="<?php echo get_permalink()?>" class="thumbnail" data-pid="<?php the_ID(); ?>" data-title="<?php echo get_the_title(); ?>">
+          <a href="<?php echo get_permalink()?>" class="thumbnail" data-pid="<?php echo $id; ?>" data-title="<?php echo get_the_title(); ?>">
             <div class="frame"></div>
             <div class="img" style="background-image:url('<?php echo $img['url'] ?>')"></div>
           </a>
