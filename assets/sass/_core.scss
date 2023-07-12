@@ -141,6 +141,8 @@ h1,h2,h3,h4,h5,h6 {
   // }
 }
 
+
+
 .main-navigation {
   text-align: right;
   position: relative;
@@ -191,17 +193,17 @@ h1,h2,h3,h4,h5,h6 {
     color: $secondary;
   }
   li.menu-logo {
-    visibility: hidden;
-    margin: 0 0!important;
-    padding: 0 0!important;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    a {
-      margin: 0 0!important;
-      padding: 0 0!important;
-      position: relative;
-    }
+    // visibility: hidden;
+    // margin: 0 0!important;
+    // padding: 0 0!important;
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // a {
+    //   margin: 0 0!important;
+    //   padding: 0 0!important;
+    //   position: relative;
+    // }
   }
 }
 
@@ -1538,6 +1540,9 @@ body.logged-in.admin-bar {
   .site-header {
     top: 32px;
   }
+  .site-logo {
+    top: 52px;
+  }
 }
 @include max(780px) {
   .carousel-wrapper .carousel-inner {
@@ -1596,6 +1601,7 @@ body.logged-in.admin-bar {
       width: 100%;
       padding-top: 80px;
       padding-bottom: 80px;
+      transform: none!important;
     }
     ul.menu > li {
       width: 100%;
@@ -1621,7 +1627,7 @@ body.logged-in.admin-bar {
       width: 30px;
       height: 30px;
       position: absolute;
-      top: 40px;
+      top: 20px;
       right: 15px;
       filter:invert(1);
       span.bar {
@@ -1710,6 +1716,14 @@ body.logged-in.admin-bar {
   }
   .site-header {
     z-index: 202;
+  }
+  body.logged-in.admin-bar {
+    #menu-toggle {
+      top: 50px;
+    }
+    .site-logo {
+      top: 45px;
+    }
   }
 }
 
@@ -1990,6 +2004,18 @@ body.subpage.page-template-page-careers {
   body.logged-in.admin-bar {
     .site-header {
       top: 46px;
+    }
+    #site-navigation {
+      padding-top: 15px;
+      #closeMenu {
+        top: 54px;
+      }
+    }
+    .site-logo {
+      top: 58px;
+    }
+    #menu-toggle {
+      top: 63px;
     }
     &.subpage {
       #content {

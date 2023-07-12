@@ -15,7 +15,6 @@ jQuery(document).ready(function ($) {
     $('#menu-toggle').trigger('click');
   });
 
-  //var logoWidth = $('.site-header img.custom-logo').width();
   $('.main-navigation ul.menu > li').each(function(){
     var target = $(this);
     var str = target.text().trim().toLowerCase();
@@ -23,33 +22,25 @@ jQuery(document).ready(function ($) {
     target.addClass('menu-'+slug);
     if( target.text().trim().toLowerCase().indexOf('logo') >= 0 ) {
       target.html("");
-      var logoWidth = $('.site-logo img').width();
-      if( $('.main-navigation li.menu-spacer').length==0 ) {
-        var middleSpacer = $('<li class="menu-spacer" style="width:'+logoWidth+'px"></li>');
-        middleSpacer.insertAfter( target );
-      }
     }
   });
+
   $('.main-navigation ul.menu').addClass('show');
 
-  
-
-  if( $('.main-navigation li.menu-spacer').length ) {
-    var offset1 = $('.main-navigation li.menu-spacer').offset().left;
-    var offset2 = $('.site-logo img').offset().left;
-    var x = offset2-offset1;
-    $('.main-navigation #primary-menu').css('transform','translateX('+x+'px)');
+  adjustSiteNav();
+  $(window).on('resize orientationchange', function(){
+    adjustSiteNav();
+  });
+  function adjustSiteNav() {
+    var logoWidth = $('.site-logo img').width();
+    if( $('.main-navigation li.menu-logo').length ) {
+      $('.main-navigation li.menu-logo').css('width',logoWidth+'px');
+      var offset1 = $('.main-navigation li.menu-logo').offset().left;
+      var offset2 = $('.site-logo img').offset().left;
+      var x = offset2-offset1;
+      $('.main-navigation #primary-menu').css('transform','translateX('+x+'px)');
+    }
   }
-  
-
-  
-
-  // var guidePost = $('.center-guide .custom-logo').offset();
-  // console.log(guidePost);
-  // var guide = document.querySelector('.center-guide img');
-  // var guideLeft = guide.getBoundingClientRect().left;
-  // $('.main-navigation li.menu-logo a').css('left',guideLeft+'px');
-
 
   function slugify(string) {
     const a = 'àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìıİłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;'
