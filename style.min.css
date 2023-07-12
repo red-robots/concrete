@@ -1349,17 +1349,20 @@ h1,h2,h3,h4,h5,h6{font-family:"Calibri",sans-serif;color:#000;letter-spacing:.03
 .site-header{background:#fff;position:fixed;top:0;left:0;width:100%;z-index:100;height:125px}
 .site-header:after{content:"";display:block;width:100%;height:5px;background:#0f213c;position:absolute;left:0;bottom:3px}
 .site-header .wrapper{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-left:5vw;padding-right:5vw}
-.site-header .head-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;width:100%}
-.site-logo{display:none}
-.main-navigation{text-align:right}
+.site-header .head-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly}
+.site-logo{display:block;width:325px;position:fixed;top:23px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:50}
+.site-logo a,.site-logo img{display:inline-block;width:100%;height:auto}
+.main-navigation{text-align:right;position:relative}
 .main-navigation ul{display:inline-block;margin:0;padding:0;list-style:none;text-align:left}
 .main-navigation li{display:inline-block;float:left}
-.main-navigation li.menu-logo{visibility:hidden}
 .main-navigation a{display:inline-block;text-decoration:none}
-.main-navigation ul.menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.main-navigation ul.menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;opacity:0}
+.main-navigation ul.menu.show{opacity:1}
 .main-navigation ul.menu>li{margin-left:10px;margin-right:10px}
 .main-navigation ul.menu>li>a{margin:0 5px;padding:5px 10px;display:inline-block;color:#0f213c;font-size:20px;font-weight:bold;line-height:1.2;text-transform:uppercase}
 .main-navigation ul.menu>li:hover>a{color:#366bba}
+.main-navigation li.menu-logo{visibility:hidden;margin:0 0 !important;padding:0 0 !important;position:absolute;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.main-navigation li.menu-logo a{margin:0 0 !important;padding:0 0 !important;position:relative}
 .hero{height:100vh;padding-top:125px}
 .hero div.image{position:relative;top:0;left:0;width:100%;height:100%;background-size:cover;background-repeat:no-repeat;background-position:center}
 .carousel-wrapper{width:100%;position:fixed;bottom:0;left:0;z-index:200;border-top:9px solid #151515;border-bottom:22px solid #151515;background:rgba(0,0,0,.65);padding-left:20px;padding-right:20px}
@@ -1627,8 +1630,8 @@ body.subpage.page-template-page-careers .careers-boxes .box{width:48%}
 .carousel-wrapper .customControl.control-next{right:-75px}
 .carousel-wrapper .carousel-inner{max-width:950px}
 }@media screen and (max-width:1230px){.site-header{height:80px}
-.site-header .head-inner{display:block;width:100%;position:relative}
-.site-logo{display:inline-block;width:220px}
+.site-header .head-inner{position:relative}
+.site-logo{display:inline-block;width:220px;-webkit-transform:none;transform:none;left:20px;top:13px}
 .site-logo a{display:block;width:100%}
 .site-logo img{width:100% !important;height:auto}
 #site-navigation{position:fixed;top:0;right:0;max-width:320px;width:100%;height:100vh;background:#0f213c;z-index:-99;visibility:hidden;-webkit-transform:translateX(100vw);transform:translateX(100vw);-webkit-transition:all ease .3s;transition:all ease .3s}
@@ -1646,7 +1649,7 @@ body.subpage.page-template-page-careers .careers-boxes .box{width:48%}
 #site-navigation.active{z-index:999;visibility:visible;-webkit-transform:translateX(0);transform:translateX(0);border-left:1px solid rgba(255,255,255,.2)}
 .mobileOverlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.8);display:none}
 .mobileOverlay.active{display:block}
-#menu-toggle{display:block;width:35px;height:35px;background:transparent;position:absolute;top:5px;right:0}
+#menu-toggle{display:block;width:35px;height:35px;background:transparent;position:fixed;top:20px;right:30px}
 #menu-toggle span.bar,#menu-toggle span.bar:before,#menu-toggle span.bar:after{display:block;width:100%;height:3px;background:#0f213c;position:absolute;left:0}
 #menu-toggle span.bar{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 #menu-toggle span.bar:before,#menu-toggle span.bar:after{content:""}
@@ -1676,6 +1679,7 @@ body.logged-in.admin-bar.subpage #content{padding-top:77px}
 .carousel-wrapper .owl-item:after{display:none}
 .carousel-wrapper .customControl.control-previous{left:0}
 .carousel-wrapper .customControl.control-next{right:0}
+.site-logo{left:20px}
 .carousel-wrapper .carousel-inner{padding-left:0 !important}
 }@media(print),(prefers-reduced-motion:reduce){.animated{-webkit-animation-duration:1ms !important;animation-duration:1ms !important;-webkit-transition-duration:1ms !important;transition-duration:1ms !important;-webkit-animation-iteration-count:1 !important;animation-iteration-count:1 !important}
 }@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}

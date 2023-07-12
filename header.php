@@ -36,16 +36,17 @@ var params={};location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){
 <div id="page" class="site cf">
 	<div id="overlay"></div>
 	<a class="skip-link" href="#content"><?php esc_html_e( 'Skip to content', 'bellaworks' ); ?></a>
-	<header id="masthead" class="site-header">
+  <header id="masthead" class="site-header">
+    <div class="site-logo">
+      <?php if( get_custom_logo() ) { ?>
+        <?php the_custom_logo(); ?>
+      <?php } else { ?>
+        <a hef="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+      <?php } ?>
+    </div>
 		<div class="wrapper cf">
       <div class="head-inner">
-        <?php if( get_custom_logo() ) { ?>
-          <span class="site-logo desktop"><?php the_custom_logo(); ?></span>
-        <?php } else { ?>
-          <h1 class="site-logo desktop"><a hef="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-        <?php } ?>
-
-        <nav id="site-navigation" class="main-navigation animated fadeInDown" role="navigation">
+        <nav id="site-navigation" class="main-navigation animated" role="navigation">
           <span id="closeMenu" class="menu-toggle"><span class="bar"></span></span>
           <?php  wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu','container_class'=>'menu-wrapper') ); ?>
         </nav><!-- #site-navigation -->
