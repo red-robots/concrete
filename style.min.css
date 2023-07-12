@@ -1628,7 +1628,7 @@ body.subpage.page-template-page-careers .careers-boxes .box{width:48%}
 .carousel-wrapper .owl-item:after{left:11px}
 .carousel-wrapper .customControl.control-previous{left:-75px}
 .carousel-wrapper .customControl.control-next{right:-75px}
-.carousel-wrapper .carousel-inner{max-width:950px}
+.carousel-wrapper .carousel-inner{max-width:980px}
 }@media screen and (max-width:1230px){.site-header{height:80px}
 .site-header .head-inner{position:relative}
 .site-logo{display:inline-block;width:220px;-webkit-transform:none;transform:none;left:20px;top:13px}
