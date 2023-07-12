@@ -1374,7 +1374,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Calibri",sans-serif;color:#000;letter-spacing:.03
 .carousel-wrapper .owl-item:after{content:"";display:block;width:24px;height:93px;background-image:url("images/VerticalSpacerBars.png");background-size:100%;background-position:center;background-repeat:no-repeat;position:absolute;top:13px;left:8px}
 .carousel-wrapper .owl-item:first-child:after{display:none}
 .carousel-wrapper .owl-nav,.carousel-wrapper .owl-dots{display:none !important}
-.carousel-wrapper .customControl{cursor:pointer;width:86px;height:93px;position:absolute;top:50%;z-index:50;-webkit-transform:translateY(-50%);transform:translateY(-50%);background-size:contain;background-position:center;background-repeat:no-repeat}
+.carousel-wrapper .customControl{cursor:pointer;width:86px;height:93px;position:absolute;top:50%;z-index:50;-webkit-transform:translateY(-50%);transform:translateY(-50%);background-size:contain;background-position:center;background-repeat:no-repeat;margin-top:-3px}
 .carousel-wrapper .customControl.control-previous{background-image:url("images/Left-Arrow.png");left:-70px}
 .carousel-wrapper .customControl.control-next{background-image:url("images/Right-Arrow.png");right:-70px}
 body.subpage{background-color:#0f213c;background-image:url("images/BlueGridBg.png");background-size:cover;background-position:top center;background-repeat:no-repeat;background-attachment:fixed}
