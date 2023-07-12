@@ -24,7 +24,6 @@ jQuery(document).ready(function ($) {
       target.html("");
     }
   });
-
   $('.main-navigation ul.menu').addClass('show');
 
   adjustSiteNav();
@@ -36,9 +35,9 @@ jQuery(document).ready(function ($) {
     if( $('.main-navigation li.menu-logo').length ) {
       $('.main-navigation li.menu-logo').css('width',logoWidth+'px');
       var offset1 = $('.main-navigation li.menu-logo').offset().left;
-      var offset2 = $('.site-logo img').offset().left;
+      var offset2 = $('.site-logo').offset().left;
       var x = offset2-offset1;
-      $('.main-navigation #primary-menu').css('transform','translateX('+x+'px)');
+      //$('.main-navigation #primary-menu').css('transform','translateX('+x+'px)');
     }
   }
 
