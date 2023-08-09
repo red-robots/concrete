@@ -93,10 +93,14 @@ jQuery(document).ready(function ($) {
   $(document).on('click', 'body.single-projects .carousel-wrapper a.thumbnail', function (e) {
     e.preventDefault();
     var link = $(this).attr('href');
+    $('#pageSpinner').addClass('show');
     $('#content').load(link + " #primary", function () {
       window.history.pushState('', '', link);
       var title = $('#main').attr('data-page-title');
       document.title = title;
+      setTimeout(function () {
+        $('#pageSpinner').removeClass('show');
+      }, 500);
     });
   });
   adjustBottomCarousel();

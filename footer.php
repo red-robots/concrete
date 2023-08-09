@@ -19,6 +19,9 @@
   $w_text = (isset($footer_widget['widget_text']) && $footer_widget['widget_text']) ? $footer_widget['widget_text'] : '';
   $social_media = get_social_media();
 	?>
+
+  <div id="pageSpinner"><div class="lds-dual-ring"></div></div>
+  
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="wrapper">
 			<div class="flexwrap">

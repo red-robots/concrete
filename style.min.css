@@ -1543,6 +1543,10 @@ body.home{background-color:#0f213c;background-image:url(images/BlueGridBg.png);b
 body.home .hero{background-color:#fff}
 body.home .site-header .wrapper{position:relative;z-index:200}
 .page404-content .contentDiv{min-height:20em}
+#pageSpinner{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.8);z-index:100;display:none;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+#pageSpinner.show{display:-webkit-box;display:-ms-flexbox;display:flex}
+.lds-dual-ring{display:inline-block;width:80px;height:80px}
+.lds-dual-ring:after{content:" ";display:block;width:64px;height:64px;margin:8px;border-radius:50%;border:6px solid #fff;border-color:#fff transparent #fff transparent;-webkit-animation:lds-dual-ring 1.2s linear infinite;animation:lds-dual-ring 1.2s linear infinite}
 @media(min-width:600px){body.subpage.page-template-page-projects .categories .term{width:50%}
 }@media(min-width:960px){body.subpage.page-template-page-projects .categories .term{width:33.333%}
 .project-listing .item-info{width:25%}
@@ -2168,4 +2172,8 @@ to{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translat
 100%{opacity:0}
 }@-webkit-keyframes swiper-preloader-spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }@keyframes swiper-preloader-spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}@-webkit-keyframes lds-dual-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}@keyframes lds-dual-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }
