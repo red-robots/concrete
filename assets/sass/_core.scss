@@ -128,7 +128,9 @@ h1,h2,h3,h4,h5,h6 {
   left: 50%;
   transform: translateX(-50%);
   z-index: 50;
-  
+  @media screen and (min-width: 1300px) {
+    margin-left: -12px;
+  }
   a, img {
     display: inline-block;
     width: 100%;
@@ -409,6 +411,8 @@ h1,h2,h3,h4,h5,h6 {
         right: 0;
       }
     }
+
+
   }
 }
 
@@ -461,12 +465,12 @@ body.subpage {
       background-repeat: no-repeat;
       border-bottom: 5px solid $primary;
       h1 {
-        font-size: 2.5em;
+        font-size: 3.5em;
         font-weight: 600;
         line-height: 1.2;
         letter-spacing: 0.2em;
         color: #FFF;
-        padding: 15px 0;
+        padding: 10px 0;
         margin: 0 0;
         text-transform: uppercase;
       }
