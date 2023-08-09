@@ -1358,7 +1358,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Calibri",sans-serif;color:#000;letter-spacing:.03
 .main-navigation a{display:inline-block;text-decoration:none}
 .main-navigation ul.menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;opacity:0;position:relative;left:30px}
 .main-navigation ul.menu.show{opacity:1}
-.main-navigation ul.menu>li{margin-left:10px;margin-right:10px}
+.main-navigation ul.menu>li{margin-left:15px;margin-right:15px;position:relative}
 .main-navigation ul.menu>li>a{margin:0 5px;padding:5px 10px;display:inline-block;color:#0f213c;font-size:20px;font-weight:bold;line-height:1.2;text-transform:uppercase}
 .main-navigation ul.menu>li:hover>a{color:#366bba}
 .main-navigation li.menu-logo{width:325px}
@@ -1379,7 +1379,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Calibri",sans-serif;color:#000;letter-spacing:.03
 .carousel-wrapper .customControl.control-next{background-image:url("images/Right-Arrow.png");right:-70px}
 body.subpage{background-color:#0f213c;background-image:url("images/BlueGridBg.png");background-size:cover;background-position:top center;background-repeat:no-repeat;background-attachment:fixed}
 body.subpage #content{max-width:100%;width:100%;margin:0 auto;padding-top:125px;overflow:hidden}
-body.subpage #content .wrapper{max-width:1100px;width:100%;margin:0 auto}
+body.subpage #content .wrapper{max-width:1115px;width:100%;margin:0 auto}
 body.subpage #content #primary{overflow:hidden}
 body.subpage #content #main{overflow:auto;height:100%;color:#fff;padding-top:0;padding-bottom:50px;background:#0f213c}
 body.subpage #content .generic-layout #main{padding-bottom:0}
@@ -1540,8 +1540,8 @@ body.subpage.page-template-page-careers .careers-boxes a:hover .button3D .txt:be
 .sitemap-links a{color:#fff;text-decoration:none;font-size:20px}
 .sitemap-links a:hover{color:#72c0fb}
 body.home{background-color:#0f213c;background-image:url(images/BlueGridBg.png);background-size:cover;background-position:bottom center;background-repeat:no-repeat;background-attachment:fixed}
-body.home #page .carousel-wrapper{position:relative !important;background:rgba(0,0,0,.75)}
 body.home .hero{background-color:#fff}
+body.home .site-header .wrapper{position:relative;z-index:200}
 .page404-content .contentDiv{min-height:20em}
 @media(min-width:600px){body.subpage.page-template-page-projects .categories .term{width:50%}
 }@media(min-width:960px){body.subpage.page-template-page-projects .categories .term{width:33.333%}
@@ -1627,6 +1627,13 @@ body.subpage.page-template-page-careers .careers-boxes .box{width:48%}
 #gform_wrapper_1 #gform_1 #field_1_33 legend.gfield_label,#gform_wrapper_1 #gform_1 #field_1_33 .ginput_container{display:inline-block;float:left}
 #gform_wrapper_1 #gform_1 #field_1_33 .ginput_container{width:71%}
 #gform_wrapper_1 #gform_1 #field_1_34 .ginput_container{width:33%}
+}@media screen and (min-width:1300px){#site-navigation.main-navigation ul.menu>li:first-child{left:-40px}
+#site-navigation.main-navigation ul.menu>li:last-child{left:-25px}
+#site-navigation.main-navigation ul.menu>li:nth-child(2){left:-40px}
+#site-navigation.main-navigation ul.menu>li:nth-child(3){left:-10px}
+body:not(.single-projects) #page .carousel-wrapper .carousel-inner{max-width:1160px}
+body:not(.single-projects) #page .carousel-wrapper{position:relative !important;background:rgba(0,0,0,.75)}
+body:not(.single-projects) #page .carousel-wrapper .thumbnail{width:160px;height:100px}
 }@media screen and (max-width:1399px){.carousel-wrapper .owl-item{max-width:240px;padding-left:50px}
 .carousel-wrapper .owl-item:after{left:11px}
 .carousel-wrapper .customControl.control-previous{left:-75px}

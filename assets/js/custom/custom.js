@@ -93,6 +93,16 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  $(document).on('click','body.single-projects .carousel-wrapper a.thumbnail', function(e){
+    e.preventDefault();
+    var link = $(this).attr('href');
+    $('#content').load(link + " #primary", function(){
+      window.history.pushState('', '', link);
+      var title = $('#main').attr('data-page-title');
+      document.title = title;
+    });
+  });
+
   adjustBottomCarousel();
   $(window).on('resize orientationchange',function(){
     adjustBottomCarousel();

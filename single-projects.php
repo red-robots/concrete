@@ -1,6 +1,8 @@
 <?php
 $post_id = get_the_ID();
 $img = get_field('main_photo', $post_id);
+$alternative_title = get_field('alternative_title', $post_id);
+$page_title = ($alternative_title) ? $alternative_title : get_the_title();
 
 get_header(); ?>
 <div id="primary" class="content-area-full project-single-content <?php echo $has_banner ?>">
@@ -10,12 +12,12 @@ get_header(); ?>
       <img src="<?php echo $img['url']?>" alt="<?php echo $img['title']?>" />
     </figure>
   <?php } ?>
-  <main id="main" class="site-main" role="main">
+  <main id="main" class="site-main" role="main" data-page-title="<?php echo $page_title ?>">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
         <div class="titlediv typical">
-          <h1 class="page-title"><span><?php the_title(); ?></span></h1>
+          <h1 class="page-title"><span><?php echo $page_title ?></span></h1>
         </div>
 
       <?php if ( get_the_content() ) { ?>
