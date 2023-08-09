@@ -446,7 +446,8 @@ body.subpage {
       color: #FFF;
       padding-top: 0;
       padding-bottom: 50px;
-      background: $primary;
+      // background: $primary;
+      background: #0f1825;
     }
 
     .generic-layout #main {
@@ -464,6 +465,7 @@ body.subpage {
       background-position: 0 -21px;
       background-repeat: no-repeat;
       border-bottom: 5px solid $primary;
+      border-bottom: none;
       h1 {
         font-size: 3.5em;
         font-weight: 600;
@@ -538,6 +540,10 @@ body.subpage {
       }
       #main {
         background-color: transparent;
+      }
+      .categories {
+        display: flex;
+        justify-content: center;
       }
       a.featImage {
         display: block;
