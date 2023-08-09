@@ -1998,6 +1998,22 @@ body.subpage.page-template-page-careers {
   }
 }
 
+body.home {
+  background-color: #0f213c;
+  background-image: url(images/BlueGridBg.png);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  #page .carousel-wrapper {
+    position: relative!important;
+    background: rgba(0,0,0,.75);
+  }
+  .hero {
+    background-color: #FFF;
+  }
+}
+
 .page404-content .contentDiv {
   min-height: 20em;
 }

@@ -1539,6 +1539,9 @@ body.subpage.page-template-page-careers .careers-boxes a:hover .button3D .txt:be
 .sitemap-links ul li ul{padding-left:20px}
 .sitemap-links a{color:#fff;text-decoration:none;font-size:20px}
 .sitemap-links a:hover{color:#72c0fb}
+body.home{background-color:#0f213c;background-image:url(images/BlueGridBg.png);background-size:cover;background-position:bottom center;background-repeat:no-repeat;background-attachment:fixed}
+body.home #page .carousel-wrapper{position:relative !important;background:rgba(0,0,0,.75)}
+body.home .hero{background-color:#fff}
 .page404-content .contentDiv{min-height:20em}
 @media(min-width:600px){body.subpage.page-template-page-projects .categories .term{width:50%}
 }@media(min-width:960px){body.subpage.page-template-page-projects .categories .term{width:33.333%}
