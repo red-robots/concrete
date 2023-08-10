@@ -1406,7 +1406,7 @@ body.subpage.page-template-page-projects .carousel-wrapper:after{background:rgba
 body.subpage.page-template-page-projects .categories{margin-top:50px}
 body.subpage.page-template-page-projects .categories .flexwrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 body.subpage.page-template-page-projects .categories .term{width:100%;padding:20px}
-body.subpage.page-template-page-projects .categories .term .title{overflow:hidden}
+body.subpage.page-template-page-projects .categories .term .title{overflow:hidden;margin-top:4px}
 body.subpage.page-template-page-projects .categories .term .button{text-align:center;padding:8px;position:relative}
 body.subpage.page-template-page-projects .categories .term .button:before{content:"";width:102%;height:8px;position:absolute;top:0;left:-3px;border-top:8px solid rgba(118,118,118,.65);border-left:12px solid transparent;border-right:12px solid transparent;z-index:5}
 body.subpage.page-template-page-projects .categories .term .button:after{content:"";width:102%;height:8px;position:absolute;bottom:0;left:-3px;border-bottom:8px solid rgba(0,0,0,.85);border-left:12px solid transparent;border-right:12px solid transparent}
@@ -1532,8 +1532,8 @@ body.subpage.page-template-page-careers .careers-boxes{padding-top:40px}
 body.subpage.page-template-page-careers .careers-boxes .wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 body.subpage.page-template-page-careers .careers-boxes .box{width:100%;padding:30px}
 body.subpage.page-template-page-careers .careers-boxes .box figure{margin:0}
-body.subpage.page-template-page-careers .careers-boxes .box figure img{width:100%;height:auto}
-body.subpage.page-template-page-careers .careers-boxes .button3D{position:relative;top:-6px}
+body.subpage.page-template-page-careers .careers-boxes .box figure img{width:100%;height:auto;-webkit-transform:scale(1.01);transform:scale(1.01)}
+body.subpage.page-template-page-careers .careers-boxes .button3D{position:relative;top:-2px}
 body.subpage.page-template-page-careers .careers-boxes a{text-decoration:none}
 body.subpage.page-template-page-careers .careers-boxes a:hover .button3D .txt:before{opacity:1;width:50%;left:50vw}
 .sitemap-content #sitemap-wrap{max-width:1000px;width:100%;margin:0 auto;min-height:25em;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
@@ -1546,6 +1546,7 @@ body.subpage.page-template-page-careers .careers-boxes a:hover .button3D .txt:be
 body.home{background-color:#0f213c;background-image:url(images/BlueGridBg.png);background-size:cover;background-position:bottom center;background-repeat:no-repeat;background-attachment:fixed}
 body.home .hero{background-color:#fff}
 body.home .site-header .wrapper{position:relative;z-index:200}
+body.home .carousel-wrapper{position:relative}
 body.subpage.page-id-7 .carousel-wrapper{background-image:url(images/BlueGridBg.png);background-position:bottom center;background-size:cover;background-color:#0f1825}
 body.subpage.page-id-7 .carousel-wrapper:after{content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,.75)}
 body.page-id-11 #content #main{background:transparent}
@@ -1705,7 +1706,8 @@ body.logged-in.admin-bar.subpage #content{padding-top:77px}
 }@media screen and (max-width:780px){.carousel-wrapper .carousel-inner{padding-left:60px}
 .carousel-wrapper .owl-carousel{overflow:hidden;max-width:530px;width:100%;margin:0 auto}
 }@media screen and (max-width:768px){body.subpage.page-template-page-contact .flexcol{text-align:center}
-}@media screen and (max-width:600px){.carousel-wrapper .carousel-inner{max-width:100%}
+}@media screen and (max-width:600px){.carousel-wrapper .customControl{width:50px}
+.carousel-wrapper .carousel-inner{max-width:100%}
 .carousel-wrapper .owl-carousel{left:0}
 .carousel-wrapper .owl-item{max-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:0}
 .carousel-wrapper .owl-item:after{display:none}

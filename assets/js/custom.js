@@ -122,12 +122,12 @@ jQuery(document).ready(function ($) {
       var contentAndCarousel = headerHeight + contentHeight + carouselHeight;
 
       if ($(window).height() > contentAndCarousel) {
-        $('.carousel-wrapper').css('position', 'fixed'); // console.log( $(window).height() );
+        $('body.subpage .carousel-wrapper').css('position', 'fixed'); // console.log( $(window).height() );
         // console.log( contentAndCarousel );
 
         var space = $(window).height() - contentAndCarousel;
         var newHeight = contentHeight + space;
-        $('#primary').css('height', newHeight + 'px');
+        $('body.subpage #primary').css('height', newHeight + 'px');
 
         if ($('body').hasClass('contacts')) {
           $('body.subpage.page-template-page-contact #content #main .entry-content').css('margin-top', '40px');

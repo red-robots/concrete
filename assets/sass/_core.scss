@@ -327,6 +327,10 @@ h1,h2,h3,h4,h5,h6 {
     background-repeat: no-repeat;
     margin-top: -3px;
 
+    @media screen and (max-width: 600px) {
+      width: 50px;
+    }
+
     &.control-previous {
       background-image: url('images/Left-Arrow.png');
       left: -70px;
@@ -613,6 +617,7 @@ body.subpage {
         }
         .title {
           overflow: hidden;
+          margin-top: 4px;
         }
         .button {
           text-align: center;
@@ -1956,12 +1961,13 @@ body.subpage.page-template-page-careers {
         img {
           width: 100%;
           height: auto;
+          transform: scale(1.01);
         }
       }
     }
     .button3D {
       position: relative;
-      top: -6px;
+      top: -2px;
     }
     a {
       text-decoration: none;
@@ -2052,6 +2058,9 @@ body.home {
       position: relative;
       z-index: 200;
     }
+  }
+  .carousel-wrapper {
+    position: relative;
   }
 }
 
