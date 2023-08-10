@@ -1499,9 +1499,11 @@ body.single-projects.subpage #content #main .entry-content p{margin:0;font-size:
 #gform_wrapper_1 .gfield_checkbox input[type=checkbox]:checked+label:after{content:"✓";display:inline-block;position:absolute;top:-7px;left:1px;z-index:1;color:#fff;font-size:20px}
 #gform_wrapper_1 h3{color:#fff !important}
 #gform_wrapper_1 button[type=button]{border:none !important;border-radius:3px;background:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.6)),to(#0f213c));background:linear-gradient(to bottom,rgba(255,255,255,0.6) 0,#0f213c 100%);-webkit-box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;padding:3px 5px 3px;height:25px;font-size:15px;font-weight:500}
-#gform_wrapper_1 .gform_button.button{-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #0f213c;border-radius:5px;padding:10px 30px;font-size:20px;font-weight:600;color:#fff;text-transform:uppercase;-webkit-transition:all .3s;transition:all .3s;display:block;width:200px;text-align:center;-webkit-box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;background:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.9)),to(#0f213c));background:linear-gradient(to bottom,rgba(255,255,255,0.9) 0,#0f213c 100%);-webkit-text-stroke:1px #0f213c}
-#gform_wrapper_1 .gform_button.button:hover,#gform_wrapper_1 .gform_button.button:focus{-webkit-transform:translateY(-3px);transform:translateY(-3px);-webkit-box-shadow:0 0 0 3px #1451a6;box-shadow:0 0 0 3px #1451a6}
-#gform_wrapper_1 .gform_footer{margin-top:30px}
+#gform_wrapper_1 .gform_button.button{-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:10px;padding:10px 30px;font-size:20px;font-weight:600;color:#fff;text-transform:uppercase;-webkit-transition:all .3s;transition:all .3s;display:block;width:200px;text-align:center;-webkit-box-shadow:none !important;box-shadow:none !important;border:2px solid rgba(95,95,95,.85);background:-webkit-gradient(linear,left top,left bottom,color-stop(1%,#f3f6fb),color-stop(29%,#9fadbb),to(#0f213c));background:linear-gradient(to bottom,#f3f6fb 1%,#9fadbb 29%,#0f213c 100%);-webkit-text-stroke:1px #0f213c}
+#gform_wrapper_1 .gform_button.button:hover,#gform_wrapper_1 .gform_button.button:focus{-webkit-transform:translateY(-3px);transform:translateY(-3px);-webkit-box-shadow:0 0 0 3px #1451a6;box-shadow:0 0 0 3px #1451a6;border-color:#fff}
+#gform_wrapper_1 .gform_footer{margin-top:10px;text-align:center}
+#gform_wrapper_1 .gform_footer .gform_button.button{margin:0 auto}
+#gform_wrapper_1 .gfield--type-captcha{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 body.logged-in.admin-bar .site-header{top:32px}
 body.logged-in.admin-bar .site-logo{top:52px}
 .contact-page-template .flexwrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
@@ -1546,6 +1548,10 @@ body.home .hero{background-color:#fff}
 body.home .site-header .wrapper{position:relative;z-index:200}
 body.subpage.page-id-7 .carousel-wrapper{background-image:url(images/BlueGridBg.png);background-position:bottom center;background-size:cover;background-color:#0f1825}
 body.subpage.page-id-7 .carousel-wrapper:after{content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,.75)}
+body.page-id-11 #content #main{background:transparent}
+body.page-id-11 #content #main .titlediv{background-image:none;background-color:rgba(0,0,0,.2)}
+body.page-id-11 #main,body.page-id-11 .entry-content,body.page-id-11 .entry-content .wrapper{height:100%}
+body.page-id-11 .entry-content .wrapper{padding:20px 40px;border-radius:8px;background:rgba(7,39,68,.92)}
 body.archive #content .titlediv{background-image:none;background-color:rgba(0,0,0,.35)}
 .page404-content .contentDiv{min-height:20em}
 #pageSpinner{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.8);z-index:100;display:none;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}

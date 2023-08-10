@@ -1509,8 +1509,8 @@ body.single-projects.subpage {
   }
   .gform_button.button {
     appearance: none;
-    border: 1px solid #0f213c;
-    border-radius: 5px;
+    // border: 1px solid #0f213c;
+    border-radius: 10px;
     padding: 10px 30px;
     font-size: 20px;
     font-weight: 600;
@@ -1520,17 +1520,30 @@ body.single-projects.subpage {
     display: block;
     width: 200px;
     text-align: center;
-    box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(15,33,60,1) 100%);
+    box-shadow: none!important;
+    border: 2px solid rgba(#5f5f5f,.85);
+    // box-shadow: 0 0 0 1px rgba(255,255,255,.3) inset;
+    // background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(15,33,60,1) 100%);
+    background: linear-gradient(to bottom,#f3f6fb 1%,#9fadbb 29%,#0f213c 100%);
     -webkit-text-stroke: 1px #0f213c;
     &:hover, &:focus {
       transform: translateY(-3px);
       // box-shadow: 0 2px 15px #1451aa;
       box-shadow: 0 0 0 3px #1451A6;
+      border-color: #FFF;
     }
   }
   .gform_footer {
-    margin-top: 30px;
+    margin-top: 10px;
+    text-align: center;
+    .gform_button.button {
+      margin: 0 auto;
+    }
+  }
+
+  .gfield--type-captcha {
+    display: flex;
+    justify-content: center;
   }
 
   @media screen and (max-width: 1199px) {
@@ -2059,6 +2072,28 @@ body.subpage.page-id-7 .carousel-wrapper {
     background-color: rgba(0,0,0,.75);
   }
 }
+
+/* Application for Employment */
+body.page-id-11 {
+  #content #main {
+    background: transparent;
+    .titlediv {
+      background-image: none;
+      background-color: rgba(0,0,0,.2);
+    }
+  }
+  #main, .entry-content,
+  .entry-content .wrapper {
+    height: 100%;
+  }
+
+  .entry-content .wrapper {
+    padding: 20px 40px;
+    border-radius: 8px;
+    background: rgba(#072744, 92%);
+  }  
+}
+
 body.archive #content .titlediv {
   background-image: none;
   background-color: rgba(0,0,0,.35);
