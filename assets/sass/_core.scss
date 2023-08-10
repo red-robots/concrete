@@ -417,9 +417,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 body.subpage {
-  // overflow: hidden;
-  background-color: $primary;
+  // // overflow: hidden;
+  // background-color: $primary;
   background-image: url('images/BlueGridBg.png');
+  background-color: #0f1825;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -461,11 +462,11 @@ body.subpage {
       left: 0;
       top: 0;
       background-image: url('images/BlueGridBg.png');
-      background-size: cover;
+      // background-size: cover;
       background-position: 0 -21px;
       background-repeat: no-repeat;
       border-bottom: 5px solid $primary;
-      border-bottom: none;
+      // border-bottom: none;
       h1 {
         font-size: 3.5em;
         font-weight: 600;
@@ -820,6 +821,9 @@ body.subpage {
       position: relative!important;
     }
   }
+}
+body.page-id-11 #primary {
+  height: auto!important;
 }
 body.subpage.archive {
   #content #main {
@@ -2038,6 +2042,27 @@ body.home {
   }
 }
 
+/* Our History */
+body.subpage.page-id-7 .carousel-wrapper {
+  background-image: url(images/BlueGridBg.png);
+  background-position: bottom center;
+  background-size: cover;
+  background-color: #0f1825;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.75);
+  }
+}
+body.archive #content .titlediv {
+  background-image: none;
+  background-color: rgba(0,0,0,.35);
+}
 
 @media screen and (min-width:1300px) {
   #site-navigation {
@@ -2061,8 +2086,8 @@ body.home {
         max-width: 1160px;
       }
       .carousel-wrapper {
-        position: relative!important;
-        background: rgba(0,0,0,.75);
+        position: relative;
+        // background: rgba(0,0,0,.75);
         .thumbnail {
           width: 160px;
           height: 100px;
@@ -2117,6 +2142,15 @@ body.home {
   }
 }
 
+
+// body:not(.single-projects) #page .carousel-wrapper,
+// body.subpage .carousel-wrapper {
+//   background-color: transparent!important;
+//   background-image: url('images/BlueGridBg.png');
+//   background-position: bottom center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
 @media screen and (max-width: 782px) {
   html #wpadminbar {

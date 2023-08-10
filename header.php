@@ -9,21 +9,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-<?php if ( is_singular(array('post')) ) { 
+<script>var pageTitle = '<?php get_the_title(); ?>'</script>
+<?php 
+if ( is_single() || is_page() ) { 
 global $post;
 $post_id = $post->ID;
 $thumbId = get_post_thumbnail_id($post_id); 
-$featImg = wp_get_attachment_image_src($thumbId,'full'); ?>
+$featImg = wp_get_attachment_image_src($thumbId,'full'); 
+$altTitle = get_field('alternative_title',$post_id);
+$pageTitle = ($altTitle) ? $altTitle : get_the_title();
+?>
 <!-- SOCIAL MEDIA META TAGS -->
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
 <meta property="og:url"		content="<?php echo get_permalink(); ?>" />
 <meta property="og:type"	content="article" />
-<meta property="og:title"	content="<?php echo get_the_title(); ?>" />
+<meta property="og:title"	content="<?php echo $pageTitle; ?>" />
 <meta property="og:description"	content="<?php echo (get_the_excerpt()) ? strip_tags(get_the_excerpt()):''; ?>" />
 <?php if ($featImg) { ?>
 <meta property="og:image"	content="<?php echo $featImg[0] ?>" />
 <?php } ?>
 <!-- end of SOCIAL MEDIA META TAGS -->
+<script>
+var pageTitle = '<?php echo $pageTitle ?>';
+document.title = pageTitle;
+</script>
 <?php } ?>
 <script>
 var siteURL = '<?php echo get_site_url();?>';

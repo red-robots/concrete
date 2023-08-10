@@ -6,6 +6,11 @@
  *  Date Modified: 02.07.2023
  */
 jQuery(document).ready(function ($) {
+  // if ( ($("#carouselData").offset().top + $("#carouselData").height()) >= $(window).height()) {
+  //   console.log( $("#carouselData").offset().top );
+  // }
+  // console.log( $("#carouselData").offset().top );
+  // console.log( $(window).height() );
   $('#menu-toggle').on('click', function () {
     $(this).toggleClass('active');
     $('#site-navigation').toggleClass('active');
@@ -100,7 +105,7 @@ jQuery(document).ready(function ($) {
       document.title = title;
       setTimeout(function () {
         $('#pageSpinner').removeClass('show');
-      }, 500);
+      }, 300);
     });
   });
   adjustBottomCarousel();
@@ -117,9 +122,22 @@ jQuery(document).ready(function ($) {
       var contentAndCarousel = headerHeight + contentHeight + carouselHeight;
 
       if ($(window).height() > contentAndCarousel) {
-        $('.carousel-wrapper').css('position', 'fixed');
+        $('.carousel-wrapper').css('position', 'fixed'); // console.log( $(window).height() );
+        // console.log( contentAndCarousel );
+
+        var space = $(window).height() - contentAndCarousel;
+        var newHeight = contentHeight + space;
+        $('#primary').css('height', newHeight + 'px');
+
+        if ($('body').hasClass('contacts')) {
+          $('body.subpage.page-template-page-contact #content #main .entry-content').css('margin-top', '40px');
+        }
       } else {
         $('.carousel-wrapper').css('position', '');
+
+        if ($('body').hasClass('contacts')) {
+          $('body.subpage.page-template-page-contact #content #main .entry-content').css('margin-top', '');
+        }
       }
     }
   }
