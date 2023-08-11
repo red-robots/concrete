@@ -1572,6 +1572,182 @@ body.single-projects.subpage {
       }
     }
   }
+
+
+  @media screen and (min-width: 1190px) {
+    #gform_1 {
+      span[id*="input_"] {position: relative;}
+      #input_1_4_4_container {width:130px;left:8px;}
+      #input_1_5_1_container{padding-right:0;}
+      #input_1_5_3_container{left:20px;}
+      #input_1_5_4_container{left:-8px;}
+      #input_1_4_3 {width: 328px;}
+      #input_1_4_4 {width: 115px;}
+      #input_1_4_6 {width: 300px;}
+      #input_1_5_3 {width: 150px;}
+
+      #input_1_4_6_container {left:1px;}
+      #field_1_6{width:475px!important;}
+      #field_1_6 .ginput_container{width:390px!important;}
+      #field_1_8 .ginput_container{width: 415px!important;}
+      #field_1_3 {width:300px!important;left:49px!important;}
+      #field_1_1{width:680px!important;}
+      #field_1_4 .ginput_complex span.name_middle {overflow:hidden;margin-left:0;}
+      #field_1_4 .ginput_complex.ginput_container_name{width: 878px!important;}
+      #field_1_5 .address_line_1{width:385px!important;}
+      #field_1_8 {
+        width: 475px!important;
+      }
+      #field_1_5 .ginput_address_city {
+        width: 225px!important;
+      }
+      #field_1_5 .ginput_address_state {
+        margin-left: 30px;
+        padding-right: 0;
+        width: 120px;
+      }
+      #field_1_5 .ginput_complex {
+        width: 930px!important;
+      }
+      #field_1_5 .ginput_complex span.address_state {
+        width: 135px!important;
+        left: -24px;
+      }
+      #field_1_5 .address_zip {
+        left: 11px;
+      }
+      #field_1_7 {
+        width: 502px!important;
+        left: -24px;
+      }
+      #field_1_7 .ginput_container {
+        width: 435px!important;
+      }
+      #field_1_9 {
+        left: -25px;
+      }
+      #field_1_10 .ginput_container {
+        width: 293px!important;
+      }
+      #field_1_9 .ginput_container {
+        width: 345px!important;
+      } 
+      #field_1_11 {
+        left: -46px;
+      }
+      #field_1_11 .address_state {
+        width: 339px!important;
+      }
+      #field_1_13 .ginput_container {
+        width: 721px;
+      }
+      #field_1_14 {
+        .ginput_container_checkbox {
+          position: relative;
+          left: 117px;
+          &:before {
+            content: "";
+            display: block;
+            width: 100px;
+            position: absolute;
+            top: 12px;
+            left: -112px;
+            border-bottom: 2px dotted #fff;
+          }
+        }
+      }
+      #field_1_15 {
+        width: 100%!important;
+        .gfield_label {
+          position: absolute;
+          top: -40px;
+          left: 420px;
+        }
+        .ginput_container_textarea {
+          width: 980px!important;
+        }
+      }
+      #field_1_16 {
+        .ginput_container_checkbox {
+          position: relative;
+          left: 202px;
+          &:before {
+            content: "";
+            display: block;
+            width: 180px;
+            position: absolute;
+            top: 12px;
+            left: -192px;
+            border-bottom: 2px dotted #fff;
+          }
+        }
+      }
+      #field_1_17 {
+        width: 580px!important;
+      }
+      #field_1_18 {
+        width: 400px!important;
+        .ginput_container {
+          width: 263px!important;
+        }
+      }
+
+      #field_1_21 .ginput_container {
+        width: 634px!important;
+        position: relative;
+        top: 4px;
+      }
+      #field_1_34,
+      #field_1_28 {
+        .ginput_container {
+          width: 980px!important;
+        }
+      }
+      #field_1_31 {
+        width: 500px!important;
+        .ginput_container {
+          width: 295px!important;
+        }
+      }
+      #field_1_32 {
+        width: 450px!important;
+        .ginput_container {
+          width: 315px!important;
+        }
+      }
+      #field_1_30 {
+        .ginput_container {
+          width: 296px;
+        }
+      }
+      #field_1_33 {
+        width: 500px!important;
+        position: relative;
+        left: -22px;
+        .ginput_container {
+          width: 370px!important;
+        }
+      }
+      //if hired...
+      #field_1_40 {
+        width: 980px;
+        .gfield_label {
+          width: 100%;
+        }
+        .ginput_container_date {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  body.page-id-11.subpage #content .wrapper {
+    max-width: 1100px;
+    padding-left: 55px;
+    padding-right: 43px;
+  }
 }
 
 body.logged-in.admin-bar {
