@@ -1595,6 +1595,8 @@ body.single-projects.subpage {
       #field_1_4 .ginput_complex span.name_middle {overflow:hidden;margin-left:0;}
       #field_1_4 .ginput_complex.ginput_container_name{width: 878px!important;}
       #field_1_5 .address_line_1{width:388px!important;}
+      #field_1_24 .ginput_container{width:340px!important;}
+      #field_1_30 .ginput_container{width:297px!important;}
       #field_1_8 {
         width: 475px!important;
       }
@@ -1728,6 +1730,11 @@ body.single-projects.subpage {
           width: 370px!important;
         }
       }
+      #field_1_38{right:33px;}
+      #field_1_37{padding-right:20px;}
+      #field_1_27 .ginput_container{width:344px!important;}
+      #field_1_29,
+      #field_1_22 {width: 977px!important;padding-right:0!important;}
       //if hired...
       #field_1_41 {
         width: 980px;
@@ -2275,7 +2282,8 @@ body.page-id-11 {
   .entry-content .wrapper {
     padding: 20px 40px;
     border-radius: 8px;
-    background: rgba(#072744, 92%);
+    // background: rgba(#072744, 92%);
+    background: $primary;
   }  
 }
 
