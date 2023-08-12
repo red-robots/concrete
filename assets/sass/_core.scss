@@ -961,6 +961,9 @@ body.single-projects.subpage {
 /* Application Form */
 #gform_wrapper_1 {
   #gform_1 {
+    ::placeholder {
+      color: rgba(255,255,255,.85)!important;
+    }
     input[type="text"],
     input[type="email"],
     input[type="number"],
@@ -1594,7 +1597,7 @@ body.single-projects.subpage {
       #field_1_1{width:680px!important;}
       #field_1_4 .ginput_complex span.name_middle {overflow:hidden;margin-left:0;}
       #field_1_4 .ginput_complex.ginput_container_name{width: 878px!important;}
-      #field_1_5 .address_line_1{width:388px!important;}
+      #field_1_5 .address_line_1{width:386px!important;}
       #field_1_24 .ginput_container{width:340px!important;}
       #field_1_30 .ginput_container{width:297px!important;}
       #field_1_8 {
