@@ -1590,7 +1590,7 @@ body.single-projects.subpage {
       #field_1_6{width:475px!important;}
       #field_1_6 .ginput_container{width:390px!important;}
       #field_1_8 .ginput_container{width: 415px!important;}
-      #field_1_3 {width:300px!important;left:47px!important;}
+      #field_1_3 {width:300px!important;left:51px!important;}
       #field_1_1{width:680px!important;}
       #field_1_4 .ginput_complex span.name_middle {overflow:hidden;margin-left:0;}
       #field_1_4 .ginput_complex.ginput_container_name{width: 878px!important;}
@@ -1646,14 +1646,14 @@ body.single-projects.subpage {
       #field_1_14 {
         .ginput_container_checkbox {
           position: relative;
-          left: 117px;
+          left: 119px;
           &:before {
             content: "";
             display: block;
-            width: 100px;
+            width: 111px;
             position: absolute;
             top: 12px;
-            left: -112px;
+            left: -117px;
             border-bottom: 2px dotted #fff;
           }
         }
@@ -1676,10 +1676,10 @@ body.single-projects.subpage {
           &:before {
             content: "";
             display: block;
-            width: 180px;
+            width: 192px;
             position: absolute;
             top: 12px;
-            left: -192px;
+            left: -199px;
             border-bottom: 2px dotted #fff;
           }
         }
