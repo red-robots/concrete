@@ -1078,6 +1078,15 @@ body.single-projects.subpage {
       }
     }
 
+    #input_1_41_date_format.screen-reader-text {
+      display: inline-block;
+      height: 0!important;
+      max-height: 0;
+      margin: 0 0!important;
+      padding: 0 0!important;
+      position: absolute;
+    }
+
     /* Position Applying For */
     #field_1_1 {
       width: 100%;
@@ -1206,24 +1215,6 @@ body.single-projects.subpage {
       legend, div.ginput_container {
         display: inline-block;
         float: left;
-      }
-      @media screen and (min-width: 1280px) {
-        legend {
-          position: relative;
-          &:after {
-            content: "";
-            display: block;
-            width: 279px;
-            position: absolute;
-            top: 14px;
-            left: 115px;
-            border-bottom: 2px dotted #FFF;
-          }
-        }
-        div.ginput_container {
-          position: relative;
-          left: 283px;
-        }
       }
     }
 
@@ -1666,10 +1657,6 @@ body.single-projects.subpage {
       .gfield_checkbox {
         display: flex;
         flex-wrap: wrap;
-        div {
-          width: 50%!important;
-          margin: 2px 0!important;
-        }
       }
     }
   }
@@ -1745,18 +1732,21 @@ body.single-projects.subpage {
         width: 721px;
       }
       #field_1_14 {
-        .ginput_container_checkbox {
+        legend {
           position: relative;
-          left: 119px;
-          &:before {
+          &:after {
             content: "";
             display: block;
-            width: 111px;
+            width: 192px;
             position: absolute;
-            top: 12px;
-            left: -117px;
+            top: 14px;
+            left: 277px;
             border-bottom: 2px dotted #fff;
           }
+        }
+        .ginput_container_checkbox {
+          position: relative;
+          left: 195px;
         }
       }
       #field_1_15 {
@@ -1771,18 +1761,21 @@ body.single-projects.subpage {
         }
       }
       #field_1_16 {
-        .ginput_container_checkbox {
+        legend {
           position: relative;
-          left: 202px;
-          &:before {
+          &:after {
             content: "";
             display: block;
-            width: 192px;
+            width: 276px;
             position: absolute;
-            top: 12px;
-            left: -199px;
-            border-bottom: 2px dotted #fff;
+            top: 13px;
+            left: 193px;
+            border-bottom: 2px dotted #FFF;
           }
+        }
+        .ginput_container_checkbox {
+          position: relative;
+          left: 279px;
         }
       }
       #field_1_17 {
@@ -1843,7 +1836,7 @@ body.single-projects.subpage {
           &:after {
             content: "";
             display: block;
-            width: 207px;
+            width: 282px;
             position: absolute;
             top: 14px;
             left: 187px;
@@ -1852,9 +1845,29 @@ body.single-projects.subpage {
         }
         .ginput_container_checkbox {
           position: relative;
-          left: 212px!important;
+          left: 287px!important;
         }
       }
+
+      #field_1_42 {
+        legend {
+          position: relative;
+          &:after {
+            content: "";
+            display: block;
+            width: 356px;
+            position: absolute;
+            top: 14px;
+            left: 113px;
+            border-bottom: 2px dotted #FFF;
+          }
+        }
+        div.ginput_container {
+          position: relative;
+          left: 358px;
+        }
+      }
+
       //if hired...
       #field_1_41 {
         width: 980px;
@@ -1872,7 +1885,38 @@ body.single-projects.subpage {
           max-width: 330px;
           width: 100%;
         }
+        div.ginput_container_date {
+          width: 330px;
+        }
       }
+
+      #field_1_12 {
+        legend {
+          position: relative;
+          &:after {
+            content: "";
+            display: block;
+            width: 72px;
+            position: absolute;
+            top: 14px;
+            left: 396px;
+            border-bottom: 2px dotted #FFF;
+          }
+        }
+        div.ginput_container_checkbox {
+          position: relative;
+          left: 76px;
+        }
+      }
+
+      #field_1_20 {
+        .ginput_container_checkbox div {
+          width: auto!important;
+          margin-right: 0;
+          min-width: 160px;
+        }
+      }
+
     }
   }
 }
