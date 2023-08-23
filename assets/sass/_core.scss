@@ -960,6 +960,13 @@ body.single-projects.subpage {
 
 /* Application Form */
 #gform_wrapper_1 {
+  .gform_validation_errors {
+    padding: 10px 15px;
+  }
+  .gform_validation_errors * {
+    color: #6b0505!important;
+    font-size: 18px;
+  }
   #gform_1 {
     ::placeholder {
       color: rgba(255,255,255,.85)!important;
@@ -1004,6 +1011,13 @@ body.single-projects.subpage {
       &.gfield--type-signature {
         display: block;
       }
+
+      &#field_1_40 {
+        align-items: flex-start;
+      }
+    }
+    .gfield_description#gfield_upload_rules_1_40 {
+      padding-top: 2px;
     }
 
     /* Position Applying For */
@@ -1666,7 +1680,7 @@ body.single-projects.subpage {
         .gfield_label {
           position: absolute;
           top: -40px;
-          left: 420px;
+          left: 510px;
         }
         .ginput_container_textarea {
           width: 980px!important;
