@@ -1020,6 +1020,64 @@ body.single-projects.subpage {
       padding-top: 2px;
     }
 
+    #field_1_40.gfield--type-fileupload {
+      position: relative;
+      input[type="file"] {
+        visibility: hidden;
+      }
+      .field_1_40_FileName {
+        display: inline-block;
+        position: absolute;
+        top: -1px;
+        left: 268px;
+        font-size: 18px;
+        overflow: hidden;
+        @media screen and (min-width: 1280px) {
+          min-width: 600px;
+        }
+      }
+      .field_1_40_info {
+        display: inline-block;
+        font-style: normal;
+        padding-bottom: 2px;
+        border-bottom: 1px dotted #FFF;
+      }
+      .gform_fileupload_rules {
+        position: relative;
+        top: -2px;
+        left: 7px;
+      }
+    }
+
+    .uploadCustomButton {
+      display: inline-block;
+      text-decoration: none;
+      appearance: none;
+      border-radius: 10px;
+      padding: 4px 10px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #FFF;
+      text-transform: uppercase;
+      transition: all .3s;
+      display: block;
+      width: 145px;
+      text-align: center;
+      box-shadow: none!important;
+      border: 2px solid rgba(#5f5f5f,.85);
+      background: linear-gradient(to bottom,#f3f6fb 1%,#9fadbb 29%,#0f213c 100%);
+      -webkit-text-stroke: 1px #0f213c;
+      position: absolute;
+      top: -7px;
+      left: 110px;
+      &:hover, &:focus {
+        transform: translateY(-3px);
+        // box-shadow: 0 2px 15px #1451aa;
+        box-shadow: 0 0 0 3px #1451A6;
+        border-color: #FFF;
+      }
+    }
+
     /* Position Applying For */
     #field_1_1 {
       width: 100%;
@@ -1139,6 +1197,32 @@ body.single-projects.subpage {
               width: 13%;
             }
           }
+        }
+      }
+    }
+
+    #field_1_42 {
+      position: relative;
+      legend, div.ginput_container {
+        display: inline-block;
+        float: left;
+      }
+      @media screen and (min-width: 1280px) {
+        legend {
+          position: relative;
+          &:after {
+            content: "";
+            display: block;
+            width: 279px;
+            position: absolute;
+            top: 14px;
+            left: 115px;
+            border-bottom: 2px dotted #FFF;
+          }
+        }
+        div.ginput_container {
+          position: relative;
+          left: 283px;
         }
       }
     }
@@ -1752,13 +1836,40 @@ body.single-projects.subpage {
       #field_1_27 .ginput_container{width:344px!important;}
       #field_1_29,
       #field_1_22 {width: 977px!important;padding-right:0!important;}
+      #field_1_19 {
+        position: relative;
+        .gfield_label {
+          position: relative;
+          &:after {
+            content: "";
+            display: block;
+            width: 207px;
+            position: absolute;
+            top: 14px;
+            left: 187px;
+            border-bottom: 2px dotted #FFF;
+          }
+        }
+        .ginput_container_checkbox {
+          position: relative;
+          left: 212px!important;
+        }
+      }
       //if hired...
       #field_1_41 {
         width: 980px;
-        .gfield_label {
-          width: 100%;
+        align-items: flex-start;
+        label {
+          width: auto;
+          position: relative;
+          top: 5px;
         }
-        .ginput_container_date {
+        label, div.ginput_container {
+          display: inline-block;
+          float: left;
+        }
+        #input_1_41 {
+          max-width: 330px;
           width: 100%;
         }
       }

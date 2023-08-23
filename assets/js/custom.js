@@ -200,4 +200,18 @@ jQuery(document).ready(function ($) {
       $('.contentDiv').css('height', contentHeight + 'px');
     }
   }
+  /* Application form */
+
+
+  if ($('#field_1_40.gfield--type-fileupload').length) {
+    $('<a href="javascript:void(0)" id="field_1_40_UploadCustomBtn" class="uploadCustomButton">Choose File</a><span class="field_1_40_FileName"><em class="field_1_40_info"></em></span>').appendTo('#field_1_40.gfield--type-fileupload div.ginput_container_fileupload');
+  }
+
+  $(document).on('click', '#field_1_40_UploadCustomBtn', function (e) {
+    e.preventDefault();
+    $('#field_1_40.gfield--type-fileupload input[type="file"]').trigger('click');
+    $('#field_1_40.gfield--type-fileupload input[type="file"]').on('change', function (e) {
+      $('.field_1_40_info').html(e.target.files[0].name);
+    });
+  });
 });
