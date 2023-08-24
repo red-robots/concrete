@@ -1472,7 +1472,7 @@ body.single-projects.subpage #content #main .entry-content p{margin:0;font-size:
 #gform_wrapper_1 #gform_1 #field_1_40.gfield--type-fileupload input[type=file]{visibility:hidden}
 #gform_wrapper_1 #gform_1 #field_1_40.gfield--type-fileupload .field_1_40_FileName{display:inline-block;position:absolute;top:-1px;left:268px;font-size:18px;overflow:hidden}
 #gform_wrapper_1 #gform_1 #field_1_40.gfield--type-fileupload .field_1_40_info{display:inline-block;font-style:normal;padding-bottom:2px;border-bottom:1px dotted #fff}
-#gform_wrapper_1 #gform_1 #field_1_40.gfield--type-fileupload .gform_fileupload_rules{position:relative;top:-2px;left:7px}
+#gform_wrapper_1 #gform_1 #field_1_40.gfield--type-fileupload .gform_fileupload_rules{display:none;position:relative;top:-2px;left:7px}
 #gform_wrapper_1 #gform_1 .uploadCustomButton{display:inline-block;text-decoration:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:10px;padding:4px 10px;font-size:20px;font-weight:600;color:#fff;text-transform:uppercase;-webkit-transition:all .3s;transition:all .3s;display:block;width:145px;text-align:center;-webkit-box-shadow:none !important;box-shadow:none !important;border:2px solid rgba(95,95,95,.85);background:-webkit-gradient(linear,left top,left bottom,color-stop(1%,#f3f6fb),color-stop(29%,#9fadbb),to(#0f213c));background:linear-gradient(to bottom,#f3f6fb 1%,#9fadbb 29%,#0f213c 100%);-webkit-text-stroke:1px #0f213c;position:absolute;top:-7px;left:110px}
 #gform_wrapper_1 #gform_1 .uploadCustomButton:hover,#gform_wrapper_1 #gform_1 .uploadCustomButton:focus{-webkit-transform:translateY(-3px);transform:translateY(-3px);-webkit-box-shadow:0 0 0 3px #1451a6;box-shadow:0 0 0 3px #1451a6;border-color:#fff}
 #gform_wrapper_1 #gform_1 #input_1_41_date_format.screen-reader-text{display:inline-block;height:0 !important;max-height:0;margin:0 0 !important;padding:0 0 !important;position:absolute}
@@ -1582,6 +1582,7 @@ body.archive #content .titlediv{background-image:none;background-color:rgba(0,0,
 .lds-dual-ring:after{content:" ";display:block;width:64px;height:64px;margin:8px;border-radius:50%;border:6px solid #fff;border-color:#fff transparent #fff transparent;-webkit-animation:lds-dual-ring 1.2s linear infinite;animation:lds-dual-ring 1.2s linear infinite}
 body.home .hero{height:calc(100vh - 190px)}
 body.home #page .carousel-wrapper{position:fixed !important;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;min-height:190px}
+body.home #page .carousel-wrapper .carousel-inner{padding-top:26px}
 @media(min-width:600px){body.subpage.page-template-page-projects .categories .term{width:50%}
 }@media(min-width:960px){body.subpage.page-template-page-projects .categories .term{width:33.333%}
 .project-listing .item-info{width:25%}
