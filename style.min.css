@@ -1383,7 +1383,7 @@ body.subpage #content .wrapper{max-width:1115px;width:100%;margin:0 auto}
 body.subpage #content #primary{overflow:hidden}
 body.subpage #content #main{overflow:auto;height:100%;color:#fff;padding-top:0;padding-bottom:50px;background:#0f1825}
 body.subpage #content .generic-layout #main{padding-bottom:0}
-body.subpage #content .titlediv{text-align:center;width:100%;position:relative;left:0;top:0;background-image:url("images/BlueGridBg.png");background-position:0 -21px;background-repeat:no-repeat;border-bottom:5px solid #0f213c}
+body.subpage #content .titlediv{text-align:center;width:100%;position:relative;left:0;top:0;background-image:url("images/BlueGridBg.png");background-size:cover;background-repeat:no-repeat;border-bottom:5px solid #0f213c;border-bottom:0}
 body.subpage #content .titlediv h1{font-size:3.5em;font-weight:600;line-height:1.2;letter-spacing:.2em;color:#fff;padding:10px 0;margin:0;text-transform:uppercase}
 body.subpage #content .entry-content{font-size:1.3em;line-height:1.3;position:relative;overflow:hidden}
 body.subpage #content .entry-content .wrapper{padding-top:30px;padding-bottom:30px}
@@ -1395,7 +1395,7 @@ body.subpage.page-template-page-projects #content #primary{overflow:visible}
 body.subpage.page-template-page-projects #content #main{background-color:transparent}
 body.subpage.page-template-page-projects #content .categories{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 body.subpage.page-template-page-projects #content a.featImage{display:block;width:100%;text-decoration:none}
-body.subpage.page-template-page-projects #content .titlediv{background-image:none;background-color:rgba(0,0,0,.25);border-bottom:5px solid #0f213c}
+body.subpage.page-template-page-projects #content .titlediv{background-size:cover;background-position:top center;background-image:none;background-color:rgba(0,0,0,.25);border-bottom:5px solid #0f213c}
 body.subpage.page-template-page-projects #content .entry-content,body.subpage.page-template-page-projects #content .wrapper{height:auto}
 body.subpage.page-template-page-projects #content .wrapper{padding-top:0;padding-bottom:0}
 body.subpage.page-template-page-projects #content .entry-content{text-align:center;font-size:1.8em;font-weight:bold;text-transform:uppercase}
@@ -1533,7 +1533,7 @@ body.logged-in.admin-bar .site-logo{top:52px}
 .contact-page-template .flexcol img{width:100%;height:auto}
 .contact-page-template .flexcol h3{font-size:25px;font-weight:normal;line-height:1.2;margin:0;color:#fff}
 .contact-page-template .flexcol a{color:#fff;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.75)}
-body.subpage.page-template-page-careers #content .titlediv,body.subpage.page-template-page-contact #content .titlediv{background-image:none;background-color:rgba(0,0,0,.25)}
+body.subpage.page-template-page-careers #content .titlediv,body.subpage.page-template-page-contact #content .titlediv{background-image:none;background-size:cover;background-position:top center;background-color:rgba(0,0,0,.25)}
 body.subpage.page-template-page-contact #content #main{background:transparent;padding-bottom:0;margin:0}
 body.subpage.page-template-page-contact #content #main .entry-content{margin:50px 0;background:rgba(15,33,60,.45)}
 .button3D{text-align:center;padding:8px;position:relative;overflow:hidden;text-decoration:none}

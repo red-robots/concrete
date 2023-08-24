@@ -466,11 +466,11 @@ body.subpage {
       left: 0;
       top: 0;
       background-image: url('images/BlueGridBg.png');
-      // background-size: cover;
-      background-position: 0 -21px;
+      background-size: cover;
+      // background-position: 0 -21px;
       background-repeat: no-repeat;
       border-bottom: 5px solid $primary;
-      // border-bottom: none;
+      border-bottom: none;
       h1 {
         font-size: 3.5em;
         font-weight: 600;
@@ -556,6 +556,8 @@ body.subpage {
         text-decoration: none;
       }
       .titlediv {
+        background-size: cover;
+        background-position: top center;
         background-image: none;
         background-color: rgba(0,0,0,.25);
         border-bottom: 5px solid $primary;
@@ -2173,6 +2175,8 @@ body.subpage.page-template-page-careers,
 body.subpage.page-template-page-contact {
   #content .titlediv {
     background-image: none;
+    background-size: cover;
+    background-position: top center;
     background-color: rgba(0,0,0,.25);
   }
 }
