@@ -14,6 +14,8 @@ jQuery(document).ready(function ($) {
   $(document).on('change', '#gform_1 select', function (e) {
     if (this.value) {
       $(e.target).addClass('selected');
+    } else {
+      $(e.target).removeClass('selected');
     }
   });
   $('#menu-toggle').on('click', function () {
