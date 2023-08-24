@@ -1440,6 +1440,7 @@ body.subpage.archive .titlediv{border-bottom:5px solid #0f213c}
 .project-listing .item-info div.img span{display:block;width:100%;height:100%;position:absolute;top:0;left:0;background-size:cover;background-position:center;background-repeat:no-repeat;border-radius:5px;-webkit-transition:all ease .5s;transition:all ease .5s}
 .project-listing .item-info img.frame{width:100%;height:auto;float:left;position:relative;z-index:5}
 .project-listing .item-info .projectLink:hover div.img span{-webkit-transform:scale(1.1);transform:scale(1.1)}
+body.page.page-id-37{background-image:none}
 body.single-projects.subpage{background-image:none}
 body.single-projects.subpage .carousel-wrapper{background-color:rgba(0,0,0,.65) !important}
 body.single-projects.subpage .project-single-content{position:relative}
