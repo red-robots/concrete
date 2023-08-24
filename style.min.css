@@ -1459,6 +1459,8 @@ body.single-projects.subpage #content #main .entry-content p{margin:0;font-size:
 #gform_wrapper_1 #gform_1 ::-ms-input-placeholder{color:rgba(255,255,255,.85) !important}
 #gform_wrapper_1 #gform_1 ::placeholder{color:rgba(255,255,255,.85) !important}
 #gform_wrapper_1 #gform_1 input[type=text],#gform_wrapper_1 #gform_1 input[type=email],#gform_wrapper_1 #gform_1 input[type=number],#gform_wrapper_1 #gform_1 input[type=tel],#gform_wrapper_1 #gform_1 select,#gform_wrapper_1 #gform_1 textarea{border:none !important;border-radius:3px;background:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.6)),to(#0f213c));background:linear-gradient(to bottom,rgba(255,255,255,0.6) 0,#0f213c 100%);-webkit-box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset;padding:0 5px 3px;height:25px;font-size:15px;font-weight:500;width:100%}
+#gform_wrapper_1 #gform_1 select{color:#000}
+#gform_wrapper_1 #gform_1 select.selected{color:#fff}
 #gform_wrapper_1 #gform_1 .gform_fields{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 #gform_wrapper_1 #gform_1 .gfield{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative}
 #gform_wrapper_1 #gform_1 .gfield .gfield_label{font-weight:500 !important;width:100%;padding-right:5px}

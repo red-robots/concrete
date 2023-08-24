@@ -988,6 +988,12 @@ body.single-projects.subpage {
       font-weight: 500;
       width: 100%;
     }
+    select {
+      color: #000;
+      &.selected {
+        color: #FFF;
+      }
+    }
     .gform_fields {
       display: flex;
       flex-wrap: wrap;
