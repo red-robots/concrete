@@ -2428,9 +2428,6 @@ body.home {
       z-index: 200;
     }
   }
-  .carousel-wrapper {
-    position: relative;
-  }
 }
 
 /* Our History */
@@ -2494,18 +2491,17 @@ body.archive #content .titlediv {
     }
   }
 
-  body:not(.single-projects) {
-    #page {
-      .carousel-wrapper .carousel-inner {
-        max-width: 1160px;
-      }
-      .carousel-wrapper {
-        position: relative;
-        // background: rgba(0,0,0,.75);
-        .thumbnail {
-          width: 160px;
-          height: 100px;
-        }
+  body:not(.home) #page,
+  body:not(.single-projects) #page {
+    .carousel-wrapper .carousel-inner {
+      max-width: 1160px;
+    }
+    .carousel-wrapper {
+      position: relative;
+      // background: rgba(0,0,0,.75);
+      .thumbnail {
+        width: 160px;
+        height: 100px;
       }
     }
   }
@@ -2565,7 +2561,28 @@ body.archive #content .titlediv {
 //   background-repeat: no-repeat;
 //   background-size: cover;
 // }
+body.home {
+  .hero {
+    height: calc(100vh - 190px);
+  }
+  #page .carousel-wrapper {
+    position: fixed!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 190px
+    .carousel-inner {
+      padding-top: 26px;
+    }
+  }
+}
 
+@media screen and (max-width: 1230px) {
+  body.home .hero {
+    padding-top: 70px;
+    // height: 78vh;
+  }
+}
 @media screen and (max-width: 782px) {
   html #wpadminbar {
     position: fixed;

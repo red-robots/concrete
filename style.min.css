@@ -1568,7 +1568,6 @@ body.subpage.page-template-page-careers .careers-boxes a:hover .button3D .txt:be
 body.home{background-color:#0f213c;background-image:url(images/BlueGridBg.png);background-size:cover;background-position:bottom center;background-repeat:no-repeat;background-attachment:fixed}
 body.home .hero{background-color:#fff}
 body.home .site-header .wrapper{position:relative;z-index:200}
-body.home .carousel-wrapper{position:relative}
 body.subpage.page-id-7 .carousel-wrapper{background-image:url(images/BlueGridBg.png);background-position:bottom center;background-size:cover;background-color:#0f1825}
 body.subpage.page-id-7 .carousel-wrapper:after{content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,.75)}
 body.page-id-11 #content #main{background:transparent}
@@ -1581,6 +1580,8 @@ body.archive #content .titlediv{background-image:none;background-color:rgba(0,0,
 #pageSpinner.show{display:-webkit-box;display:-ms-flexbox;display:flex}
 .lds-dual-ring{display:inline-block;width:80px;height:80px}
 .lds-dual-ring:after{content:" ";display:block;width:64px;height:64px;margin:8px;border-radius:50%;border:6px solid #fff;border-color:#fff transparent #fff transparent;-webkit-animation:lds-dual-ring 1.2s linear infinite;animation:lds-dual-ring 1.2s linear infinite}
+body.home .hero{height:calc(100vh - 190px)}
+body.home #page .carousel-wrapper{position:fixed !important;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;min-height:190px}
 @media(min-width:600px){body.subpage.page-template-page-projects .categories .term{width:50%}
 }@media(min-width:960px){body.subpage.page-template-page-projects .categories .term{width:33.333%}
 .project-listing .item-info{width:25%}
@@ -1747,9 +1748,9 @@ body.page-id-11.subpage #content .wrapper{max-width:1100px;padding-left:55px;pad
 #site-navigation.main-navigation ul.menu>li:last-child{left:-25px}
 #site-navigation.main-navigation ul.menu>li:nth-child(2){left:-40px}
 #site-navigation.main-navigation ul.menu>li:nth-child(3){left:-10px}
-body:not(.single-projects) #page .carousel-wrapper .carousel-inner{max-width:1160px}
-body:not(.single-projects) #page .carousel-wrapper{position:relative}
-body:not(.single-projects) #page .carousel-wrapper .thumbnail{width:160px;height:100px}
+body:not(.home) #page .carousel-wrapper .carousel-inner,body:not(.single-projects) #page .carousel-wrapper .carousel-inner{max-width:1160px}
+body:not(.home) #page .carousel-wrapper,body:not(.single-projects) #page .carousel-wrapper{position:relative}
+body:not(.home) #page .carousel-wrapper .thumbnail,body:not(.single-projects) #page .carousel-wrapper .thumbnail{width:160px;height:100px}
 }@media screen and (max-width:1399px){.carousel-wrapper .owl-item{max-width:240px;padding-left:50px}
 .carousel-wrapper .owl-item:after{left:11px}
 .carousel-wrapper .customControl.control-previous{left:-75px}
@@ -1785,6 +1786,7 @@ body.subpage #content{padding-top:80px}
 .site-header{z-index:202}
 body.logged-in.admin-bar #menu-toggle{top:50px}
 body.logged-in.admin-bar .site-logo{top:45px}
+body.home .hero{padding-top:70px}
 }@media screen and (max-width:1200px){.carousel-wrapper .carousel-inner{max-width:700px}
 }@media screen and (max-width:1199px){#gform_wrapper_1 .ginput_container{width:100% !important}
 #gform_wrapper_1 #field_1_11 .address_state .gform-field-label{display:none !important}
