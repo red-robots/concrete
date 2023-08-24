@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
   // console.log( $("#carouselData").offset().top );
   // console.log( $(window).height() );
 
-  $(document).on('change','#gform_1 select', function(e){
+  $(document).on('change focusout blur','#gform_1 select', function(e){
     if( this.value ) {
       $(e.target).addClass('selected');
     } else {
