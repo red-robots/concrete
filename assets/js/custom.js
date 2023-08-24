@@ -18,6 +18,9 @@ jQuery(document).ready(function ($) {
       $(e.target).removeClass('selected');
     }
   });
+  $(document).on('click', '#gform_1 select', function (e) {
+    $(e.target).removeClass('selected');
+  });
   $('#menu-toggle').on('click', function () {
     $(this).toggleClass('active');
     $('#site-navigation').toggleClass('active');
