@@ -122,6 +122,19 @@ jQuery(document).ready(function ($) {
   $(window).on('resize orientationchange', function () {
     adjustBottomCarousel();
   });
+  $(document).keydown(function (e) {
+    if ($('body').hasClass('subpage')) {
+      //Keyboard: Control + 0
+      if (e.keyCode == 48 && e.key == 0) {
+        location.reload();
+      } //Keyboard: Control + 0
+
+
+      if (e.keyCode == 187 && e.key == '=') {
+        $('body.subpage #primary').css('height', '');
+      }
+    }
+  });
   /* Adjust Bottom Carousel. If window is higher than content, then make carousel fixed */
 
   function adjustBottomCarousel() {
