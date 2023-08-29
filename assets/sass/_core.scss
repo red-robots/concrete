@@ -2563,9 +2563,10 @@ body.archive #content .titlediv {
 //   background-size: cover;
 // }
 body.home {
-  .hero {
-    height: calc(100vh - 190px);
-  }
+  background-image: none!important;
+  // .hero {
+  //   height: calc(100vh - 190px);
+  // }
   #page .carousel-wrapper {
     position: fixed!important;
     display: flex;

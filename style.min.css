@@ -1580,7 +1580,7 @@ body.archive #content .titlediv{background-image:none;background-color:rgba(0,0,
 #pageSpinner.show{display:-webkit-box;display:-ms-flexbox;display:flex}
 .lds-dual-ring{display:inline-block;width:80px;height:80px}
 .lds-dual-ring:after{content:" ";display:block;width:64px;height:64px;margin:8px;border-radius:50%;border:6px solid #fff;border-color:#fff transparent #fff transparent;-webkit-animation:lds-dual-ring 1.2s linear infinite;animation:lds-dual-ring 1.2s linear infinite}
-body.home .hero{height:calc(100vh - 190px)}
+body.home{background-image:none !important}
 body.home #page .carousel-wrapper{position:fixed !important;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;min-height:190px}
 body.home #page .carousel-wrapper .carousel-inner{padding-top:26px}
 @media(min-width:600px){body.subpage.page-template-page-projects .categories .term{width:50%}
