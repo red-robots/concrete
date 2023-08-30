@@ -119,15 +119,20 @@ jQuery(document).ready(function ($) {
     });
   });
   adjustBottomCarousel();
-  $(window).on('resize orientationchange', function () {
+  $(window).on('resize orientationchange', function (e) {
     adjustBottomCarousel();
+
+    if (e.target.devicePixelRatio == 2) {
+      location.reload();
+    }
   });
   $(document).keydown(function (e) {
     if ($('body').hasClass('subpage')) {
-      //Keyboard: Control + 0
+      //console.log(e);
+      //Keyboard: Control + `0`
       if (e.keyCode == 48 && e.key == 0) {
         location.reload();
-      } //Keyboard: Control + 0
+      } //Keyboard: Control + `=`
 
 
       if (e.keyCode == 187 && e.key == '=') {
