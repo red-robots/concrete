@@ -1792,6 +1792,7 @@ body.home .hero{padding-top:70px}
 }@media screen and (max-width:1199px){#gform_wrapper_1 .ginput_container{width:100% !important}
 #gform_wrapper_1 #field_1_11 .address_state .gform-field-label{display:none !important}
 #gform_wrapper_1 #field_1_20 .gfield_checkbox{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+}@media screen and (max-width:820px){body.subpage #content .titlediv h1{font-size:1.75em}
 }@media screen and (max-width:800px){.carousel-wrapper .carousel-inner{max-width:620px}
 .carousel-wrapper .owl-item{padding-left:30px}
 .carousel-wrapper .owl-item:after{left:-7px}
