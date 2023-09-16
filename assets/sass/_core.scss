@@ -2565,6 +2565,10 @@ body.archive #content .titlediv {
 //   background-repeat: no-repeat;
 //   background-size: cover;
 // }
+
+body.subpage.page-template-page-projects #carouselData.carousel-wrapper {
+  position: fixed!important;
+}
 body.home {
   background-image: none!important;
   // .hero {
@@ -2655,6 +2659,8 @@ body.form-submitted {
       }
       ul.menu {
         padding-top: 0!important;
+        padding-bottom: 0!important;
+        float: left;
       }
     }
   }

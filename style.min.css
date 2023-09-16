@@ -1580,6 +1580,7 @@ body.archive #content .titlediv{background-image:none;background-color:rgba(0,0,
 #pageSpinner.show{display:-webkit-box;display:-ms-flexbox;display:flex}
 .lds-dual-ring{display:inline-block;width:80px;height:80px}
 .lds-dual-ring:after{content:" ";display:block;width:64px;height:64px;margin:8px;border-radius:50%;border:6px solid #fff;border-color:#fff transparent #fff transparent;-webkit-animation:lds-dual-ring 1.2s linear infinite;animation:lds-dual-ring 1.2s linear infinite}
+body.subpage.page-template-page-projects #carouselData.carousel-wrapper{position:fixed !important}
 body.home{background-image:none !important}
 body.home #page .carousel-wrapper{position:fixed !important;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;min-height:190px}
 body.home #page .carousel-wrapper .carousel-inner{padding-top:26px}
@@ -1798,7 +1799,7 @@ body.home .hero{padding-top:70px}
 body.home #menu-toggle{display:none !important}
 body.home #site-navigation.main-navigation{visibility:visible !important;-webkit-transform:translateX(0);transform:translateX(0);z-index:9999;top:unset;bottom:0;max-width:100%;height:auto !important}
 body.home #site-navigation.main-navigation #closeMenu{display:none !important}
-body.home #site-navigation.main-navigation ul.menu{padding-top:0 !important}
+body.home #site-navigation.main-navigation ul.menu{padding-top:0 !important;padding-bottom:0 !important;float:left}
 #site-navigation.main-navigation ul.menu>li{border-bottom:1px solid #000}
 #site-navigation.main-navigation ul.menu>li>a{padding:12px 15px 11px;text-align:center;border-top:0;background:-webkit-gradient(linear,left top,left bottom,from(#0c1626),color-stop(14%,#192c4c),color-stop(50%,#2c5b8e),color-stop(84%,#192c4c),to(#0d1428));background:linear-gradient(to bottom,#0c1626 0,#192c4c 14%,#2c5b8e 50%,#192c4c 84%,#0d1428 100%)}
 body.subpage #content .titlediv{background-size:initial;background-position:-10px -37px}

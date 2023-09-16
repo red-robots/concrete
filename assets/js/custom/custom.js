@@ -255,11 +255,10 @@ jQuery(document).ready(function ($) {
     $('body').addClass('form-submitted');
   }
 
-  $(document).on('gform_confirmation_loaded', function(event, formId){
-    // console.log(formId);
-    // if( $('.gform_confirmation_wrapper').length ) {
-    //   $('body').addClass('form-submitted');
-    // }
+  $(window).on('resize',function(e) { 
+    if( window.devicePixelRatio > 0.8 &&  window.devicePixelRatio<=1 ) {
+      location.reload();
+    }
   });
 
 }); 
