@@ -1583,6 +1583,7 @@ body.archive #content .titlediv{background-image:none;background-color:rgba(0,0,
 body.home{background-image:none !important}
 body.home #page .carousel-wrapper{position:fixed !important;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;min-height:190px}
 body.home #page .carousel-wrapper .carousel-inner{padding-top:26px}
+body.form-submitted #carouselData.carousel-wrapper{position:fixed !important;left:0;bottom:0}
 @media(min-width:600px){body.subpage.page-template-page-projects .categories .term{width:50%}
 }@media(min-width:960px){body.subpage.page-template-page-projects .categories .term{width:33.333%}
 .project-listing .item-info{width:25%}
@@ -1793,6 +1794,14 @@ body.home .hero{padding-top:70px}
 #gform_wrapper_1 #field_1_11 .address_state .gform-field-label{display:none !important}
 #gform_wrapper_1 #field_1_20 .gfield_checkbox{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
 }@media screen and (max-width:820px){body.subpage #content .titlediv h1{font-size:1.75em}
+#carouselData.carousel-wrapper{display:none !important}
+body.home #menu-toggle{display:none !important}
+body.home #site-navigation.main-navigation{visibility:visible !important;-webkit-transform:translateX(0);transform:translateX(0);z-index:9999;top:unset;bottom:0;max-width:100%;height:auto !important}
+body.home #site-navigation.main-navigation #closeMenu{display:none !important}
+body.home #site-navigation.main-navigation ul.menu{padding-top:0 !important}
+#site-navigation.main-navigation ul.menu>li{border-bottom:1px solid #000}
+#site-navigation.main-navigation ul.menu>li>a{padding:12px 15px 11px;text-align:center;border-top:0;background:-webkit-gradient(linear,left top,left bottom,from(#0c1626),color-stop(14%,#192c4c),color-stop(50%,#2c5b8e),color-stop(84%,#192c4c),to(#0d1428));background:linear-gradient(to bottom,#0c1626 0,#192c4c 14%,#2c5b8e 50%,#192c4c 84%,#0d1428 100%)}
+body.subpage #content .titlediv{background-size:initial;background-position:-10px -37px}
 }@media screen and (max-width:800px){.carousel-wrapper .carousel-inner{max-width:620px}
 .carousel-wrapper .owl-item{padding-left:30px}
 .carousel-wrapper .owl-item:after{left:-7px}

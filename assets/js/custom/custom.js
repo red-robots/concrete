@@ -251,4 +251,15 @@ jQuery(document).ready(function ($) {
     });
   });
 
+  if( $('.gform_confirmation_wrapper').length ) {
+    $('body').addClass('form-submitted');
+  }
+
+  $(document).on('gform_confirmation_loaded', function(event, formId){
+    // console.log(formId);
+    // if( $('.gform_confirmation_wrapper').length ) {
+    //   $('body').addClass('form-submitted');
+    // }
+  });
+
 }); 

@@ -242,4 +242,14 @@ jQuery(document).ready(function ($) {
       $('.field_1_40_info').html(e.target.files[0].name);
     });
   });
+
+  if ($('.gform_confirmation_wrapper').length) {
+    $('body').addClass('form-submitted');
+  }
+
+  $(document).on('gform_confirmation_loaded', function (event, formId) {// console.log(formId);
+    // if( $('.gform_confirmation_wrapper').length ) {
+    //   $('body').addClass('form-submitted');
+    // }
+  });
 });
