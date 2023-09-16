@@ -248,6 +248,7 @@ jQuery(document).ready(function ($) {
   }
 
   $(window).on('resize', function (e) {
+    //if screen is zoomed 80% to 100%, reload webpage
     if (window.devicePixelRatio > 0.8 && window.devicePixelRatio <= 1) {
       location.reload();
     }
