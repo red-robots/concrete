@@ -1790,6 +1790,7 @@ body.subpage #content{padding-top:80px}
 body.logged-in.admin-bar #menu-toggle{top:50px}
 body.logged-in.admin-bar .site-logo{top:45px}
 body.home .hero{padding-top:70px}
+body.home #page .carousel-wrapper#carouselData{display:none !important}
 }@media screen and (max-width:1200px){.carousel-wrapper .carousel-inner{max-width:700px}
 }@media screen and (max-width:1199px){#gform_wrapper_1 .ginput_container{width:100% !important}
 #gform_wrapper_1 #field_1_11 .address_state .gform-field-label{display:none !important}

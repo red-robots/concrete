@@ -2679,3 +2679,9 @@ body.form-submitted {
     background-position: -10px -37px;
   }
 }
+
+@media screen and (max-width: 1230px) {
+  body.home #page .carousel-wrapper#carouselData {
+    display: none!important;
+  }
+}
